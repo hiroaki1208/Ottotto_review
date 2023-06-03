@@ -1,0 +1,41 @@
+2023-06-04 00:35:20 run.sh         TARGET: test                                      
+2023-06-04 00:49:21 run.sh         TARGET: test                                      
+2023-06-04 00:49:38 run.sh         TARGET: test                                      
+2023-06-04 00:50:35 run.sh         TARGET: test                                      
+2023-06-04 00:51:00 run.sh         TARGET: test                                      
+2023-06-04 00:55:01 run.sh         TARGET: test                                      
+2023-06-04 00:56:14 run.sh         TARGET: test                                      
+2023-06-04 00:56:57 run.sh         TARGET: test                                      
+2023-06-04 00:58:25 run.sh         TARGET: test                                      
+2023-06-04 01:01:57 run.sh         TARGET: test                                      
+2023-06-04 01:02:11 run.sh         TARGET: test                                      
+2023-06-04 01:02:26 run.sh         TARGET: test                                      
+2023-06-04 01:02:36 run.sh         TARGET: test                                      
+2023-06-04 01:03:33 run.sh         TARGET: test                                      
+2023-06-04 01:04:36 run.sh         TARGET: test                                      
+2023-06-04 01:13:34 run.sh         TARGET: test                                      
+2023-06-04 01:14:35 run.sh         TARGET: test                                      
+2023-06-04 01:14:48 run.sh         TARGET: test                                      
+2023-06-04 01:16:50 run.sh         TARGET: test                                      
+2023-06-04 01:17:18 run.sh         TARGET: test                                      
+2023-06-04 01:19:36 run.sh         TARGET: test                                      
+2023-06-04 01:21:08 run.sh         TARGET: test                                      
+2023-06-04 01:21:10,859 - MainThread - root - WARNING - thi
+2023-06-04 01:21:10,860 - MainThread - root - WARNING - thii
+2023-06-04 01:23:19 run.sh         TARGET: test                                      
+2023-06-04 01:23:29,790 - MainThread - root - WARNING - thi
+2023-06-04 01:24:29 run.sh         TARGET: test                                      
+2023-06-04 01:24:36 run.sh         TARGET: test                                      
+2023-06-04 01:24:38,625 - MainThread - root - WARNING - thi
+2023-06-04 01:24:54 run.sh         TARGET: test                                      
+2023-06-04 01:24:57,271 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 01:24:57,275 - MainThread - root - INFO - hero
+2023-06-04 01:24:57,275 - MainThread - root - WARNING - thi
+2023-06-04 01:24:57,276 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 01:27:03 run.sh         TARGET: test                                      
+2023-06-04 01:27:12,227 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 01:27:12,229 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 01:27:47 run.sh         TARGET: test                                      
+2023-06-04 01:27:49,452 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 01:27:49,457 - MainThread - root - INFO - param_target: test
+2023-06-04 01:27:49,458 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
