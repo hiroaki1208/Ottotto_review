@@ -3,6 +3,7 @@
 export DATA_DIR="$(pwd)/data"
 export OUTPUT_DIR="$(pwd)/output"
 export LOG_DIR="$(pwd)/logs"
+export CONFIG_DIR="$(pwd)/configs"
 
 # export PYTHONPATH="$(pwd)/src:$(cd ../):${PYTHONPATH}"
 

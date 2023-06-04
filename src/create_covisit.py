@@ -17,6 +17,13 @@ class CreateCoVisitaion():
         # self.target = target
         # self.is_partial = is_partial
 
+    def check_existing_file(self):
+        '''既に既存のco-visitationファイルがあるかチェック
+        '''
+
+        
+
+        return
 
     def data_collection(self, target, is_partial):
         '''data collection
@@ -60,6 +67,7 @@ class CreateCoVisitaion():
         CHUNK_LEN = int( np.ceil( len(self.files)/CHUNK_SIZE ) )
 
         TYPE_WEIGHT = {0:1, 1:6, 2:3}
+        TOP = 50
 
         logging.info(f'start: create candidate by co-visitation')
 
@@ -126,7 +134,19 @@ class CreateCoVisitaion():
                 del tmp2, df
                 _ = gc.collect()
 
+            # 全ファイルを読み込んでいるかを確認
             assert set(self.files) == set(read_files)
+            # convert matrix to dictionary
+            tmp = tmp.reset_index()
+            tmp = tmp.sort_values(['aid_x', 'wgt_y'], ascending= [True, False])
+            # save top N
+            tmp = tmp.reset_index(drop= True)
+            tmp['n'] = tmp.groupby('aid_x').aid_y.cumcount()
+            tmp = tmp[tmp.n < TOP].copy()
+            tmp.to_parquet()
+
+
+
             logging.info(f'end create co-visitaion chunck: {chunk}')
 
 
