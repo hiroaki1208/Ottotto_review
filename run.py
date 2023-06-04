@@ -5,6 +5,8 @@ import os, sys
 import argparse
 import logging.config
 
+import src.create_covisit
+
 DATA_DIR = os.getenv('DATA_DIR')
 OUTPUT_DIR = os.getenv('OUTPUT_DIR')
 LOG_DIR = os.getenv('LOG_DIR')
@@ -19,6 +21,9 @@ def main():
     parser.add_argument('-t', '--target', default='validation'
                         , help= 'execution type(validation or test)'
                         , choices= ['validation', 'test'])
+    parser.add_argument('-p', '--is_partial', default=1
+                        , help= 'train data partial or not', type=int
+                        )
     args = parser.parse_args()
 
     try:
@@ -27,15 +32,23 @@ def main():
                                   , defaults={'logdir': LOG_DIR})
         
         logging.info(f'start: {base_dir}')
-        logging.info(f'param_target: {args.target}')
+        logging.info(f'(param)target: {args.target}')
+        logging.info(f'(param)is_partial: {args.is_partial}')
+
+        # 特徴量
+
+        # 予測
+        ## co-visitaion
+        CoVisitaion = src.create_covisit.CreateCoVisitaion()
+        CoVisitaion.data_collection(args.target, args.is_partial)
+        CoVisitaion.covisit_candidate()
+
 
         logging.info(f'end: {base_dir}')
     except Exception as e:
         logging.exception(e)
         sys.exit(1)
 
-
-    
 
 if __name__ == '__main__':
     # print('Hello')

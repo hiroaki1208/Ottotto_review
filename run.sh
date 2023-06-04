@@ -5,11 +5,12 @@ cd ${BASE_DIR}
 
 # defaultパラメータ設定
 TARGET='validation'
-# echo ${TARGET}
+IS_PARTIAL=0
 # パラメータのパース
-while getopts t: OPT; do
+while getopts t:p: OPT; do
     case ${OPT} in
         t) TARGET=${OPTARG} ;;
+        p) IS_PARTIAL=1 ;;
         *) usage ;;
     esac
 done
@@ -17,5 +18,5 @@ done
 source ${BASE_DIR}/configs/config.sh
 set -euC
 
-LOG "TARGET: ${TARGET}"
-python ${BASE_DIR}/run.py -t ${TARGET}
+
+python ${BASE_DIR}/run.py -t ${TARGET} -p ${IS_PARTIAL}

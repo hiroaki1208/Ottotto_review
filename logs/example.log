@@ -39,3 +39,814 @@
 2023-06-04 01:27:49,452 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
 2023-06-04 01:27:49,457 - MainThread - root - INFO - param_target: test
 2023-06-04 01:27:49,458 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 08:42:51,915 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 08:42:51,916 - MainThread - root - INFO - param_target: test
+2023-06-04 08:42:51,917 - MainThread - root - ERROR - 'module' object is not callable
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 38, in main
+    CoVisitaion = src.create_covisit()
+TypeError: 'module' object is not callable
+2023-06-04 08:43:20,873 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 08:43:20,874 - MainThread - root - INFO - param_target: test
+2023-06-04 08:43:20,874 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review\src
+2023-06-04 08:43:20,874 - MainThread - root - INFO - start create covisitaion part: 0
+2023-06-04 08:43:20,875 - MainThread - root - INFO - start create covisitaion part: 1
+2023-06-04 08:43:20,875 - MainThread - root - INFO - start create covisitaion part: 2
+2023-06-04 08:43:20,876 - MainThread - root - INFO - start create covisitaion part: 3
+2023-06-04 08:43:20,876 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review\src
+2023-06-04 08:43:20,877 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 08:45:12,809 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 08:45:12,809 - MainThread - root - INFO - param_target: test
+2023-06-04 08:45:12,810 - MainThread - root - ERROR - 'module' object is not callable
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 39, in main
+    CoVisitaion.covisit_candidate()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\create_covisit.py", line 19, in covisit_candidate
+    file_path = os.path.abspath(os.path(__file__))
+TypeError: 'module' object is not callable
+2023-06-04 08:46:40,338 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 08:46:40,339 - MainThread - root - INFO - param_target: test
+2023-06-04 08:46:40,339 - MainThread - root - ERROR - 'module' object is not callable
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 39, in main
+    CoVisitaion.covisit_candidate()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\create_covisit.py", line 19, in covisit_candidate
+    file_path = os.path.abspath(os.path(__file__))
+TypeError: 'module' object is not callable
+2023-06-04 08:47:00,375 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 08:47:00,376 - MainThread - root - INFO - param_target: test
+2023-06-04 08:47:00,377 - MainThread - root - ERROR - 'module' object is not callable
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 39, in main
+    CoVisitaion.covisit_candidate()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\create_covisit.py", line 20, in covisit_candidate
+    file_path = os.path(__file__)
+TypeError: 'module' object is not callable
+2023-06-04 08:47:09,584 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 08:47:09,585 - MainThread - root - INFO - param_target: test
+2023-06-04 08:47:09,586 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review\src\create_covisit.py
+2023-06-04 08:47:09,586 - MainThread - root - INFO - start create covisitaion part: 0
+2023-06-04 08:47:09,586 - MainThread - root - INFO - start create covisitaion part: 1
+2023-06-04 08:47:09,587 - MainThread - root - INFO - start create covisitaion part: 2
+2023-06-04 08:47:09,587 - MainThread - root - INFO - start create covisitaion part: 3
+2023-06-04 08:47:09,588 - MainThread - root - ERROR - name 'file_dir' is not defined
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 39, in main
+    CoVisitaion.covisit_candidate()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\create_covisit.py", line 28, in covisit_candidate
+    logging.info(f'end: {file_dir}')
+NameError: name 'file_dir' is not defined
+2023-06-04 09:03:59,651 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:03:59,651 - MainThread - root - INFO - (param)target: test
+2023-06-04 09:03:59,652 - MainThread - root - INFO - (param)is_partial: TRUE
+2023-06-04 09:03:59,653 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:04:13,001 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:04:13,002 - MainThread - root - INFO - (param)target: test
+2023-06-04 09:04:13,002 - MainThread - root - INFO - (param)is_partial: False
+2023-06-04 09:04:13,003 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:04:38,991 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:04:38,992 - MainThread - root - INFO - (param)target: test
+2023-06-04 09:04:38,993 - MainThread - root - INFO - (param)is_partial: False
+2023-06-04 09:04:38,994 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:05:20,688 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:05:20,689 - MainThread - root - INFO - (param)target: test
+2023-06-04 09:05:20,689 - MainThread - root - INFO - (param)is_partial: False
+2023-06-04 09:05:20,690 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:05:26,241 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:05:26,242 - MainThread - root - INFO - (param)target: test
+2023-06-04 09:05:26,242 - MainThread - root - INFO - (param)is_partial: false
+2023-06-04 09:05:26,243 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:05:34,972 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:05:34,973 - MainThread - root - INFO - (param)target: test
+2023-06-04 09:05:34,973 - MainThread - root - INFO - (param)is_partial: true
+2023-06-04 09:05:34,974 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:11:00,472 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:11:00,472 - MainThread - root - INFO - (param)target: test
+2023-06-04 09:11:00,473 - MainThread - root - INFO - (param)is_partial: 0
+2023-06-04 09:11:00,474 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:11:24,223 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:11:24,225 - MainThread - root - INFO - (param)target: test
+2023-06-04 09:11:24,225 - MainThread - root - INFO - (param)is_partial: 0
+2023-06-04 09:11:24,226 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:11:34,929 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:11:34,930 - MainThread - root - INFO - (param)target: test
+2023-06-04 09:11:34,931 - MainThread - root - INFO - (param)is_partial: 1
+2023-06-04 09:11:34,932 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:15:34,316 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:15:34,317 - MainThread - root - INFO - (param)target: test
+2023-06-04 09:15:34,318 - MainThread - root - INFO - (param)is_partial: 1
+2023-06-04 09:15:34,318 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:15:55,204 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:15:55,205 - MainThread - root - INFO - (param)target: test
+2023-06-04 09:15:55,205 - MainThread - root - INFO - (param)is_partial: 1
+2023-06-04 09:15:55,206 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:16:01,542 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:16:01,542 - MainThread - root - INFO - (param)target: test
+2023-06-04 09:16:01,543 - MainThread - root - INFO - (param)is_partial: 0
+2023-06-04 09:16:01,544 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:16:09,623 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:16:09,624 - MainThread - root - INFO - (param)target: test
+2023-06-04 09:16:09,624 - MainThread - root - INFO - (param)is_partial: 0
+2023-06-04 09:16:09,625 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:16:38,821 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:16:38,821 - MainThread - root - INFO - (param)target: test
+2023-06-04 09:16:38,822 - MainThread - root - INFO - (param)is_partial: 0
+2023-06-04 09:16:38,823 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:37:47,867 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:37:47,868 - MainThread - root - INFO - (param)target: test
+2023-06-04 09:37:47,869 - MainThread - root - INFO - (param)is_partial: 1
+2023-06-04 09:37:47,870 - MainThread - root - ERROR - __init__() missing 2 required positional arguments: 'target' and 'is_partial'
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 47, in main
+    CoVisitaion = src.create_covisit.CreateCoVisitaion()
+TypeError: __init__() missing 2 required positional arguments: 'target' and 'is_partial'
+2023-06-04 09:38:03,982 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:38:03,983 - MainThread - root - INFO - (param)target: test
+2023-06-04 09:38:03,984 - MainThread - root - INFO - (param)is_partial: 1
+2023-06-04 09:38:03,984 - MainThread - root - ERROR - __init__() missing 2 required positional arguments: 'target' and 'is_partial'
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 42, in main
+    CoVisitaion = src.create_covisit.CreateCoVisitaion()
+TypeError: __init__() missing 2 required positional arguments: 'target' and 'is_partial'
+2023-06-04 09:41:14,653 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:41:14,654 - MainThread - root - INFO - (param)target: test
+2023-06-04 09:41:14,655 - MainThread - root - INFO - (param)is_partial: 1
+2023-06-04 09:41:14,659 - MainThread - root - ERROR - 'CreateCoVisitaion' object has no attribute 'files'
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 43, in main
+    CoVisitaion.data_collection(args.target, args.is_partial)
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\create_covisit.py", line 52, in data_collection
+    self.files = random.choices(self.files, k= 12)
+AttributeError: 'CreateCoVisitaion' object has no attribute 'files'
+2023-06-04 09:41:47,984 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:41:47,985 - MainThread - root - INFO - (param)target: validation
+2023-06-04 09:41:47,986 - MainThread - root - INFO - (param)is_partial: 1
+2023-06-04 09:41:50,338 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:42:04,557 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:42:04,558 - MainThread - root - INFO - (param)target: validation
+2023-06-04 09:42:04,558 - MainThread - root - INFO - (param)is_partial: 1
+2023-06-04 09:42:06,230 - MainThread - root - INFO - start: create candidate by co-visitation
+2023-06-04 09:42:06,231 - MainThread - root - INFO - start create co-visitaion part: 0
+2023-06-04 09:42:06,232 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 09:42:06,232 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 09:42:06,233 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 09:42:06,234 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 09:42:06,235 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 09:42:06,237 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 09:42:06,238 - MainThread - root - INFO - start create co-visitaion part: 1
+2023-06-04 09:42:06,238 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 09:42:06,239 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 09:42:06,240 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 09:42:06,241 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 09:42:06,242 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 09:42:06,242 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 09:42:06,243 - MainThread - root - INFO - start create co-visitaion part: 2
+2023-06-04 09:42:06,244 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 09:42:06,244 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 09:42:06,245 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 09:42:06,246 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 09:42:06,246 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 09:42:06,247 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 09:42:06,248 - MainThread - root - INFO - start create co-visitaion part: 3
+2023-06-04 09:42:06,248 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 09:42:06,249 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 09:42:06,250 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 09:42:06,250 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 09:42:06,251 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 09:42:06,252 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 09:42:06,253 - MainThread - root - INFO - end: create candidate by co-visitation
+2023-06-04 09:42:06,253 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:44:23,391 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:44:23,391 - MainThread - root - INFO - (param)target: validation
+2023-06-04 09:44:23,392 - MainThread - root - INFO - (param)is_partial: 1
+2023-06-04 09:44:24,999 - MainThread - root - INFO - start: create candidate by co-visitation
+2023-06-04 09:44:25,000 - MainThread - root - INFO - start create co-visitaion part: 0
+2023-06-04 09:44:25,001 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 09:44:25,002 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 09:44:25,003 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 09:44:25,004 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 09:44:25,006 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 09:44:25,007 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 09:44:25,007 - MainThread - root - INFO - start create co-visitaion part: 1
+2023-06-04 09:44:25,008 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 09:44:25,009 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 09:44:25,009 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 09:44:25,010 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 09:44:25,011 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 09:44:25,012 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 09:44:25,013 - MainThread - root - INFO - start create co-visitaion part: 2
+2023-06-04 09:44:25,014 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 09:44:25,015 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 09:44:25,016 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 09:44:25,016 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 09:44:25,017 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 09:44:25,018 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 09:44:25,019 - MainThread - root - INFO - start create co-visitaion part: 3
+2023-06-04 09:44:25,019 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 09:44:25,020 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 09:44:25,021 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 09:44:25,022 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 09:44:25,023 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 09:44:25,024 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 09:44:25,025 - MainThread - root - INFO - end: create candidate by co-visitation
+2023-06-04 09:44:25,025 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:51:21,854 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:51:21,855 - MainThread - root - INFO - (param)target: validation
+2023-06-04 09:51:21,856 - MainThread - root - INFO - (param)is_partial: 1
+2023-06-04 09:51:24,651 - MainThread - root - INFO - start: create candidate by co-visitation
+2023-06-04 09:51:24,652 - MainThread - root - INFO - start create co-visitaion part: 0
+2023-06-04 09:51:24,653 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 09:51:24,698 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 09:51:24,755 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 09:51:24,806 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 09:51:24,865 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 09:51:24,866 - MainThread - root - ERROR - list index out of range
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 44, in main
+    CoVisitaion.covisit_candidate()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\create_covisit.py", line 104, in covisit_candidate
+    add = self.data[self.files[k+i]]
+IndexError: list index out of range
+2023-06-04 09:53:39,549 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:53:39,549 - MainThread - root - INFO - (param)target: validation
+2023-06-04 09:53:39,550 - MainThread - root - INFO - (param)is_partial: 1
+2023-06-04 09:53:42,010 - MainThread - root - INFO - start: create candidate by co-visitation
+2023-06-04 09:53:42,012 - MainThread - root - INFO - start create co-visitaion part: 0
+2023-06-04 09:53:42,012 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 09:53:42,051 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 09:53:42,078 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 09:53:42,118 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 09:53:42,160 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 09:53:42,162 - MainThread - root - ERROR - list index out of range
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 44, in main
+    CoVisitaion.covisit_candidate()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\create_covisit.py", line 104, in covisit_candidate
+    add = self.data[self.files[k+i]]
+IndexError: list index out of range
+2023-06-04 09:54:32,947 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:54:32,948 - MainThread - root - INFO - (param)target: validation
+2023-06-04 09:54:32,949 - MainThread - root - INFO - (param)is_partial: 1
+2023-06-04 09:54:35,039 - MainThread - root - INFO - start: create candidate by co-visitation
+2023-06-04 09:54:35,042 - MainThread - root - INFO - start create co-visitaion part: 0
+2023-06-04 09:54:35,043 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 09:54:35,045 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 09:54:35,047 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 09:54:35,049 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 09:54:35,050 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 09:54:35,052 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 09:54:35,053 - MainThread - root - INFO - start create co-visitaion part: 1
+2023-06-04 09:54:35,054 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 09:54:35,055 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 09:54:35,056 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 09:54:35,058 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 09:54:35,059 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 09:54:35,060 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 09:54:35,062 - MainThread - root - INFO - start create co-visitaion part: 2
+2023-06-04 09:54:35,063 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 09:54:35,064 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 09:54:35,066 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 09:54:35,068 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 09:54:35,069 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 09:54:35,070 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 09:54:35,072 - MainThread - root - INFO - start create co-visitaion part: 3
+2023-06-04 09:54:35,072 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 09:54:35,073 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 09:54:35,075 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 09:54:35,076 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 09:54:35,078 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 09:54:35,079 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 09:54:35,081 - MainThread - root - INFO - end: create candidate by co-visitation
+2023-06-04 09:54:35,081 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:57:41,675 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 09:57:41,676 - MainThread - root - INFO - (param)target: validation
+2023-06-04 09:57:41,676 - MainThread - root - INFO - (param)is_partial: 1
+2023-06-04 09:57:44,154 - MainThread - root - INFO - start: create candidate by co-visitation
+2023-06-04 09:57:44,156 - MainThread - root - INFO - start create co-visitaion part: 0
+2023-06-04 09:57:44,156 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 09:57:44,157 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 09:57:44,159 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 09:57:44,161 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 09:57:44,163 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 09:57:44,164 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 09:57:44,166 - MainThread - root - INFO - start create co-visitaion part: 1
+2023-06-04 09:57:44,166 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 09:57:44,167 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 09:57:44,168 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 09:57:44,169 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 09:57:44,171 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 09:57:44,173 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 09:57:44,174 - MainThread - root - INFO - start create co-visitaion part: 2
+2023-06-04 09:57:44,175 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 09:57:44,176 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 09:57:44,178 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 09:57:44,179 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 09:57:44,180 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 09:57:44,181 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 09:57:44,183 - MainThread - root - INFO - start create co-visitaion part: 3
+2023-06-04 09:57:44,183 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 09:57:44,184 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 09:57:44,186 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 09:57:44,187 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 09:57:44,188 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 09:57:44,190 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 09:57:44,191 - MainThread - root - INFO - end: create candidate by co-visitation
+2023-06-04 09:57:44,191 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 10:03:19,925 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 10:03:19,927 - MainThread - root - INFO - (param)target: validation
+2023-06-04 10:03:19,928 - MainThread - root - INFO - (param)is_partial: 1
+2023-06-04 10:03:22,250 - MainThread - root - INFO - start: create candidate by co-visitation
+2023-06-04 10:03:22,251 - MainThread - root - INFO - start create co-visitaion part: 0
+2023-06-04 10:03:22,251 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 10:03:41,913 - MainThread - root - INFO - end: create candidate by co-visitation
+2023-06-04 10:03:41,914 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 10:04:47,366 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 10:04:47,366 - MainThread - root - INFO - (param)target: validation
+2023-06-04 10:04:47,367 - MainThread - root - INFO - (param)is_partial: 1
+2023-06-04 10:04:49,512 - MainThread - root - INFO - start: create candidate by co-visitation
+2023-06-04 10:04:49,512 - MainThread - root - INFO - start create co-visitaion part: 0
+2023-06-04 10:04:49,513 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 10:05:03,971 - MainThread - root - ERROR - 
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 44, in main
+    CoVisitaion.covisit_candidate()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\create_covisit.py", line 101, in covisit_candidate
+    for k in range(a,b,READ_CT):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\create_covisit.py", line 101, in covisit_candidate
+    for k in range(a,b,READ_CT):
+  File "C:\Users\hiroa\anaconda3\envs\env0\lib\bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "C:\Users\hiroa\anaconda3\envs\env0\lib\bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+2023-06-04 10:26:20,599 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 10:26:20,600 - MainThread - root - INFO - (param)target: validation
+2023-06-04 10:26:20,600 - MainThread - root - INFO - (param)is_partial: 1
+2023-06-04 10:26:23,219 - MainThread - root - INFO - start: create candidate by co-visitation
+2023-06-04 10:26:23,219 - MainThread - root - INFO - start create co-visitaion part: 0
+2023-06-04 10:26:23,219 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 10:26:23,220 - MainThread - root - INFO - start create co-visitaion start from 0 in chunck 0
+2023-06-04 10:26:49,697 - MainThread - root - INFO - end create co-visitaion start from 0 in chunck 0
+2023-06-04 10:26:49,721 - MainThread - root - INFO - end create co-visitaion chunck: 0
+2023-06-04 10:28:17,232 - MainThread - root - ERROR - 
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 44, in main
+    CoVisitaion.covisit_candidate()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\create_covisit.py", line 95, in covisit_candidate
+    for chunk in range(CHUNK_SIZE):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\create_covisit.py", line 95, in covisit_candidate
+    for chunk in range(CHUNK_SIZE):
+  File "C:\Users\hiroa\anaconda3\envs\env0\lib\bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "C:\Users\hiroa\anaconda3\envs\env0\lib\bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+2023-06-04 10:28:57,617 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 10:28:57,617 - MainThread - root - INFO - (param)target: validation
+2023-06-04 10:28:57,617 - MainThread - root - INFO - (param)is_partial: 1
+2023-06-04 10:28:59,994 - MainThread - root - INFO - start: create candidate by co-visitation
+2023-06-04 10:28:59,995 - MainThread - root - INFO - start create co-visitaion part: 0
+2023-06-04 10:28:59,995 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 10:28:59,996 - MainThread - root - INFO - start create co-visitaion start from 0 in chunck 0
+2023-06-04 10:28:59,998 - MainThread - root - INFO - end create co-visitaion start from 0 in chunck 0
+2023-06-04 10:28:59,998 - MainThread - root - INFO - end create co-visitaion chunck: 0
+2023-06-04 10:29:03,645 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 10:29:03,647 - MainThread - root - INFO - start create co-visitaion start from 2 in chunck 1
+2023-06-04 10:29:03,648 - MainThread - root - INFO - end create co-visitaion start from 2 in chunck 1
+2023-06-04 10:29:03,649 - MainThread - root - INFO - end create co-visitaion chunck: 1
+2023-06-04 10:29:05,827 - MainThread - root - ERROR - 
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 44, in main
+    CoVisitaion.covisit_candidate()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\create_covisit.py", line 95, in covisit_candidate
+    for chunk in range(CHUNK_SIZE):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\create_covisit.py", line 95, in covisit_candidate
+    for chunk in range(CHUNK_SIZE):
+  File "C:\Users\hiroa\anaconda3\envs\env0\lib\bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "C:\Users\hiroa\anaconda3\envs\env0\lib\bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+2023-06-04 10:29:12,809 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 10:29:12,810 - MainThread - root - INFO - (param)target: validation
+2023-06-04 10:29:12,810 - MainThread - root - INFO - (param)is_partial: 1
+2023-06-04 10:29:15,199 - MainThread - root - INFO - start: create candidate by co-visitation
+2023-06-04 10:29:15,199 - MainThread - root - INFO - start create co-visitaion part: 0
+2023-06-04 10:29:15,199 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 10:29:15,201 - MainThread - root - INFO - start create co-visitaion start from 0 in chunck 0
+2023-06-04 10:29:15,202 - MainThread - root - INFO - end create co-visitaion start from 0 in chunck 0
+2023-06-04 10:29:15,202 - MainThread - root - INFO - end create co-visitaion chunck: 0
+2023-06-04 10:29:25,134 - MainThread - root - ERROR - 
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 44, in main
+    CoVisitaion.covisit_candidate()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\create_covisit.py", line 95, in covisit_candidate
+    for chunk in range(CHUNK_SIZE):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\create_covisit.py", line 95, in covisit_candidate
+    for chunk in range(CHUNK_SIZE):
+  File "C:\Users\hiroa\anaconda3\envs\env0\lib\bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "C:\Users\hiroa\anaconda3\envs\env0\lib\bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+2023-06-04 10:29:27,405 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 10:29:27,406 - MainThread - root - INFO - (param)target: validation
+2023-06-04 10:29:27,406 - MainThread - root - INFO - (param)is_partial: 1
+2023-06-04 10:29:29,681 - MainThread - root - INFO - start: create candidate by co-visitation
+2023-06-04 10:29:29,681 - MainThread - root - INFO - start create co-visitaion part: 0
+2023-06-04 10:29:29,681 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 10:29:29,682 - MainThread - root - INFO - start create co-visitaion start from 0 in chunck 0
+2023-06-04 10:29:29,684 - MainThread - root - INFO - end create co-visitaion start from 0 in chunck 0
+2023-06-04 10:29:29,684 - MainThread - root - INFO - end create co-visitaion chunck: 0
+2023-06-04 10:29:29,686 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 10:29:29,686 - MainThread - root - INFO - start create co-visitaion start from 2 in chunck 1
+2023-06-04 10:29:29,687 - MainThread - root - INFO - end create co-visitaion start from 2 in chunck 1
+2023-06-04 10:29:29,688 - MainThread - root - INFO - end create co-visitaion chunck: 1
+2023-06-04 10:29:29,688 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 10:29:29,689 - MainThread - root - INFO - start create co-visitaion start from 4 in chunck 2
+2023-06-04 10:29:29,690 - MainThread - root - INFO - end create co-visitaion start from 4 in chunck 2
+2023-06-04 10:29:29,691 - MainThread - root - INFO - end create co-visitaion chunck: 2
+2023-06-04 10:29:29,691 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 10:29:29,692 - MainThread - root - INFO - start create co-visitaion start from 6 in chunck 3
+2023-06-04 10:29:29,693 - MainThread - root - INFO - end create co-visitaion start from 6 in chunck 3
+2023-06-04 10:29:29,694 - MainThread - root - INFO - end create co-visitaion chunck: 3
+2023-06-04 10:29:29,694 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 10:29:29,695 - MainThread - root - INFO - start create co-visitaion start from 8 in chunck 4
+2023-06-04 10:29:29,696 - MainThread - root - INFO - end create co-visitaion start from 8 in chunck 4
+2023-06-04 10:29:29,696 - MainThread - root - INFO - end create co-visitaion chunck: 4
+2023-06-04 10:29:29,697 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 10:29:29,697 - MainThread - root - INFO - start create co-visitaion start from 10 in chunck 5
+2023-06-04 10:29:29,698 - MainThread - root - INFO - end create co-visitaion start from 10 in chunck 5
+2023-06-04 10:29:29,699 - MainThread - root - INFO - end create co-visitaion chunck: 5
+2023-06-04 10:29:29,699 - MainThread - root - INFO - start create co-visitaion part: 1
+2023-06-04 10:29:29,699 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 10:29:29,700 - MainThread - root - INFO - start create co-visitaion start from 0 in chunck 0
+2023-06-04 10:29:29,701 - MainThread - root - INFO - end create co-visitaion start from 0 in chunck 0
+2023-06-04 10:29:29,702 - MainThread - root - INFO - end create co-visitaion chunck: 0
+2023-06-04 10:29:29,702 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 10:29:29,703 - MainThread - root - INFO - start create co-visitaion start from 2 in chunck 1
+2023-06-04 10:29:29,704 - MainThread - root - INFO - end create co-visitaion start from 2 in chunck 1
+2023-06-04 10:29:29,705 - MainThread - root - INFO - end create co-visitaion chunck: 1
+2023-06-04 10:29:29,705 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 10:29:29,706 - MainThread - root - INFO - start create co-visitaion start from 4 in chunck 2
+2023-06-04 10:29:29,708 - MainThread - root - INFO - end create co-visitaion start from 4 in chunck 2
+2023-06-04 10:29:29,708 - MainThread - root - INFO - end create co-visitaion chunck: 2
+2023-06-04 10:29:29,708 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 10:29:29,709 - MainThread - root - INFO - start create co-visitaion start from 6 in chunck 3
+2023-06-04 10:29:29,710 - MainThread - root - INFO - end create co-visitaion start from 6 in chunck 3
+2023-06-04 10:29:29,711 - MainThread - root - INFO - end create co-visitaion chunck: 3
+2023-06-04 10:29:29,711 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 10:29:29,712 - MainThread - root - INFO - start create co-visitaion start from 8 in chunck 4
+2023-06-04 10:29:29,713 - MainThread - root - INFO - end create co-visitaion start from 8 in chunck 4
+2023-06-04 10:29:29,713 - MainThread - root - INFO - end create co-visitaion chunck: 4
+2023-06-04 10:29:29,714 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 10:29:29,714 - MainThread - root - INFO - start create co-visitaion start from 10 in chunck 5
+2023-06-04 10:29:29,715 - MainThread - root - INFO - end create co-visitaion start from 10 in chunck 5
+2023-06-04 10:29:29,715 - MainThread - root - INFO - end create co-visitaion chunck: 5
+2023-06-04 10:29:29,716 - MainThread - root - INFO - start create co-visitaion part: 2
+2023-06-04 10:29:29,717 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 10:29:29,717 - MainThread - root - INFO - start create co-visitaion start from 0 in chunck 0
+2023-06-04 10:29:29,718 - MainThread - root - INFO - end create co-visitaion start from 0 in chunck 0
+2023-06-04 10:29:29,719 - MainThread - root - INFO - end create co-visitaion chunck: 0
+2023-06-04 10:29:29,719 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 10:29:29,720 - MainThread - root - INFO - start create co-visitaion start from 2 in chunck 1
+2023-06-04 10:29:29,721 - MainThread - root - INFO - end create co-visitaion start from 2 in chunck 1
+2023-06-04 10:29:29,721 - MainThread - root - INFO - end create co-visitaion chunck: 1
+2023-06-04 10:29:29,722 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 10:29:29,722 - MainThread - root - INFO - start create co-visitaion start from 4 in chunck 2
+2023-06-04 10:29:29,724 - MainThread - root - INFO - end create co-visitaion start from 4 in chunck 2
+2023-06-04 10:29:29,724 - MainThread - root - INFO - end create co-visitaion chunck: 2
+2023-06-04 10:29:29,724 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 10:29:29,725 - MainThread - root - INFO - start create co-visitaion start from 6 in chunck 3
+2023-06-04 10:29:29,726 - MainThread - root - INFO - end create co-visitaion start from 6 in chunck 3
+2023-06-04 10:29:29,727 - MainThread - root - INFO - end create co-visitaion chunck: 3
+2023-06-04 10:29:29,727 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 10:29:29,728 - MainThread - root - INFO - start create co-visitaion start from 8 in chunck 4
+2023-06-04 10:29:29,729 - MainThread - root - INFO - end create co-visitaion start from 8 in chunck 4
+2023-06-04 10:29:29,730 - MainThread - root - INFO - end create co-visitaion chunck: 4
+2023-06-04 10:29:29,730 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 10:29:29,731 - MainThread - root - INFO - start create co-visitaion start from 10 in chunck 5
+2023-06-04 10:29:29,732 - MainThread - root - INFO - end create co-visitaion start from 10 in chunck 5
+2023-06-04 10:29:29,733 - MainThread - root - INFO - end create co-visitaion chunck: 5
+2023-06-04 10:29:29,733 - MainThread - root - INFO - start create co-visitaion part: 3
+2023-06-04 10:29:29,734 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 10:29:29,734 - MainThread - root - INFO - start create co-visitaion start from 0 in chunck 0
+2023-06-04 10:29:29,736 - MainThread - root - INFO - end create co-visitaion start from 0 in chunck 0
+2023-06-04 10:29:29,736 - MainThread - root - INFO - end create co-visitaion chunck: 0
+2023-06-04 10:29:29,736 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 10:29:29,737 - MainThread - root - INFO - start create co-visitaion start from 2 in chunck 1
+2023-06-04 10:29:29,738 - MainThread - root - INFO - end create co-visitaion start from 2 in chunck 1
+2023-06-04 10:29:29,739 - MainThread - root - INFO - end create co-visitaion chunck: 1
+2023-06-04 10:29:29,739 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 10:29:29,740 - MainThread - root - INFO - start create co-visitaion start from 4 in chunck 2
+2023-06-04 10:29:29,741 - MainThread - root - INFO - end create co-visitaion start from 4 in chunck 2
+2023-06-04 10:29:29,742 - MainThread - root - INFO - end create co-visitaion chunck: 2
+2023-06-04 10:29:29,742 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 10:29:29,743 - MainThread - root - INFO - start create co-visitaion start from 6 in chunck 3
+2023-06-04 10:29:29,744 - MainThread - root - INFO - end create co-visitaion start from 6 in chunck 3
+2023-06-04 10:29:29,744 - MainThread - root - INFO - end create co-visitaion chunck: 3
+2023-06-04 10:29:29,745 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 10:29:29,745 - MainThread - root - INFO - start create co-visitaion start from 8 in chunck 4
+2023-06-04 10:29:29,746 - MainThread - root - INFO - end create co-visitaion start from 8 in chunck 4
+2023-06-04 10:29:29,747 - MainThread - root - INFO - end create co-visitaion chunck: 4
+2023-06-04 10:29:29,747 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 10:29:29,748 - MainThread - root - INFO - start create co-visitaion start from 10 in chunck 5
+2023-06-04 10:29:29,749 - MainThread - root - INFO - end create co-visitaion start from 10 in chunck 5
+2023-06-04 10:29:29,749 - MainThread - root - INFO - end create co-visitaion chunck: 5
+2023-06-04 10:29:29,749 - MainThread - root - INFO - end: create candidate by co-visitation
+2023-06-04 10:29:29,750 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 10:31:16,694 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 10:31:16,695 - MainThread - root - INFO - (param)target: validation
+2023-06-04 10:31:16,695 - MainThread - root - INFO - (param)is_partial: 1
+2023-06-04 10:31:18,821 - MainThread - root - INFO - start: create candidate by co-visitation
+2023-06-04 10:31:18,822 - MainThread - root - INFO - start create co-visitaion part: 0
+2023-06-04 10:31:18,822 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 10:31:18,823 - MainThread - root - INFO - start create co-visitaion start from 0 in chunck 0
+2023-06-04 10:31:18,824 - MainThread - root - INFO - end create co-visitaion start from 0 in chunck 0
+2023-06-04 10:31:18,825 - MainThread - root - INFO - end create co-visitaion chunck: 0
+2023-06-04 10:31:18,825 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 10:31:18,826 - MainThread - root - INFO - start create co-visitaion start from 2 in chunck 1
+2023-06-04 10:31:18,827 - MainThread - root - INFO - end create co-visitaion start from 2 in chunck 1
+2023-06-04 10:31:18,828 - MainThread - root - INFO - end create co-visitaion chunck: 1
+2023-06-04 10:31:18,828 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 10:31:18,829 - MainThread - root - INFO - start create co-visitaion start from 4 in chunck 2
+2023-06-04 10:31:18,830 - MainThread - root - INFO - end create co-visitaion start from 4 in chunck 2
+2023-06-04 10:31:18,830 - MainThread - root - INFO - end create co-visitaion chunck: 2
+2023-06-04 10:31:18,831 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 10:31:18,832 - MainThread - root - INFO - start create co-visitaion start from 6 in chunck 3
+2023-06-04 10:31:18,833 - MainThread - root - INFO - end create co-visitaion start from 6 in chunck 3
+2023-06-04 10:31:18,833 - MainThread - root - INFO - end create co-visitaion chunck: 3
+2023-06-04 10:31:18,834 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 10:31:18,834 - MainThread - root - INFO - start create co-visitaion start from 8 in chunck 4
+2023-06-04 10:31:18,835 - MainThread - root - INFO - end create co-visitaion start from 8 in chunck 4
+2023-06-04 10:31:18,836 - MainThread - root - INFO - end create co-visitaion chunck: 4
+2023-06-04 10:31:18,836 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 10:31:18,837 - MainThread - root - INFO - start create co-visitaion start from 10 in chunck 5
+2023-06-04 10:31:18,838 - MainThread - root - INFO - end create co-visitaion start from 10 in chunck 5
+2023-06-04 10:31:18,839 - MainThread - root - INFO - end create co-visitaion chunck: 5
+2023-06-04 10:31:18,839 - MainThread - root - INFO - start create co-visitaion part: 1
+2023-06-04 10:31:18,839 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 10:31:18,840 - MainThread - root - INFO - start create co-visitaion start from 0 in chunck 0
+2023-06-04 10:31:18,841 - MainThread - root - INFO - end create co-visitaion start from 0 in chunck 0
+2023-06-04 10:31:18,841 - MainThread - root - INFO - end create co-visitaion chunck: 0
+2023-06-04 10:31:18,842 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 10:31:18,842 - MainThread - root - INFO - start create co-visitaion start from 2 in chunck 1
+2023-06-04 10:31:18,843 - MainThread - root - INFO - end create co-visitaion start from 2 in chunck 1
+2023-06-04 10:31:18,844 - MainThread - root - INFO - end create co-visitaion chunck: 1
+2023-06-04 10:31:18,844 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 10:31:18,845 - MainThread - root - INFO - start create co-visitaion start from 4 in chunck 2
+2023-06-04 10:31:18,845 - MainThread - root - INFO - end create co-visitaion start from 4 in chunck 2
+2023-06-04 10:31:18,846 - MainThread - root - INFO - end create co-visitaion chunck: 2
+2023-06-04 10:31:18,846 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 10:31:18,847 - MainThread - root - INFO - start create co-visitaion start from 6 in chunck 3
+2023-06-04 10:31:18,848 - MainThread - root - INFO - end create co-visitaion start from 6 in chunck 3
+2023-06-04 10:31:18,848 - MainThread - root - INFO - end create co-visitaion chunck: 3
+2023-06-04 10:31:18,849 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 10:31:18,849 - MainThread - root - INFO - start create co-visitaion start from 8 in chunck 4
+2023-06-04 10:31:18,850 - MainThread - root - INFO - end create co-visitaion start from 8 in chunck 4
+2023-06-04 10:31:18,851 - MainThread - root - INFO - end create co-visitaion chunck: 4
+2023-06-04 10:31:18,851 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 10:31:18,852 - MainThread - root - INFO - start create co-visitaion start from 10 in chunck 5
+2023-06-04 10:31:18,853 - MainThread - root - INFO - end create co-visitaion start from 10 in chunck 5
+2023-06-04 10:31:18,853 - MainThread - root - INFO - end create co-visitaion chunck: 5
+2023-06-04 10:31:18,854 - MainThread - root - INFO - start create co-visitaion part: 2
+2023-06-04 10:31:18,854 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 10:31:18,855 - MainThread - root - INFO - start create co-visitaion start from 0 in chunck 0
+2023-06-04 10:31:18,856 - MainThread - root - INFO - end create co-visitaion start from 0 in chunck 0
+2023-06-04 10:31:18,856 - MainThread - root - INFO - end create co-visitaion chunck: 0
+2023-06-04 10:31:18,856 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 10:31:18,857 - MainThread - root - INFO - start create co-visitaion start from 2 in chunck 1
+2023-06-04 10:31:18,858 - MainThread - root - INFO - end create co-visitaion start from 2 in chunck 1
+2023-06-04 10:31:18,858 - MainThread - root - INFO - end create co-visitaion chunck: 1
+2023-06-04 10:31:18,858 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 10:31:18,859 - MainThread - root - INFO - start create co-visitaion start from 4 in chunck 2
+2023-06-04 10:31:18,860 - MainThread - root - INFO - end create co-visitaion start from 4 in chunck 2
+2023-06-04 10:31:18,860 - MainThread - root - INFO - end create co-visitaion chunck: 2
+2023-06-04 10:31:18,861 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 10:31:18,861 - MainThread - root - INFO - start create co-visitaion start from 6 in chunck 3
+2023-06-04 10:31:18,862 - MainThread - root - INFO - end create co-visitaion start from 6 in chunck 3
+2023-06-04 10:31:18,862 - MainThread - root - INFO - end create co-visitaion chunck: 3
+2023-06-04 10:31:18,863 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 10:31:18,864 - MainThread - root - INFO - start create co-visitaion start from 8 in chunck 4
+2023-06-04 10:31:18,864 - MainThread - root - INFO - end create co-visitaion start from 8 in chunck 4
+2023-06-04 10:31:18,865 - MainThread - root - INFO - end create co-visitaion chunck: 4
+2023-06-04 10:31:18,865 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 10:31:18,866 - MainThread - root - INFO - start create co-visitaion start from 10 in chunck 5
+2023-06-04 10:31:18,866 - MainThread - root - INFO - end create co-visitaion start from 10 in chunck 5
+2023-06-04 10:31:18,867 - MainThread - root - INFO - end create co-visitaion chunck: 5
+2023-06-04 10:31:18,867 - MainThread - root - INFO - start create co-visitaion part: 3
+2023-06-04 10:31:18,867 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 10:31:18,868 - MainThread - root - INFO - start create co-visitaion start from 0 in chunck 0
+2023-06-04 10:31:18,868 - MainThread - root - INFO - end create co-visitaion start from 0 in chunck 0
+2023-06-04 10:31:18,869 - MainThread - root - INFO - end create co-visitaion chunck: 0
+2023-06-04 10:31:18,869 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 10:31:18,870 - MainThread - root - INFO - start create co-visitaion start from 2 in chunck 1
+2023-06-04 10:31:18,871 - MainThread - root - INFO - end create co-visitaion start from 2 in chunck 1
+2023-06-04 10:31:18,871 - MainThread - root - INFO - end create co-visitaion chunck: 1
+2023-06-04 10:31:18,872 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 10:31:18,873 - MainThread - root - INFO - start create co-visitaion start from 4 in chunck 2
+2023-06-04 10:31:18,874 - MainThread - root - INFO - end create co-visitaion start from 4 in chunck 2
+2023-06-04 10:31:18,874 - MainThread - root - INFO - end create co-visitaion chunck: 2
+2023-06-04 10:31:18,874 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 10:31:18,875 - MainThread - root - INFO - start create co-visitaion start from 6 in chunck 3
+2023-06-04 10:31:18,876 - MainThread - root - INFO - end create co-visitaion start from 6 in chunck 3
+2023-06-04 10:31:18,876 - MainThread - root - INFO - end create co-visitaion chunck: 3
+2023-06-04 10:31:18,876 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 10:31:18,877 - MainThread - root - INFO - start create co-visitaion start from 8 in chunck 4
+2023-06-04 10:31:18,878 - MainThread - root - INFO - end create co-visitaion start from 8 in chunck 4
+2023-06-04 10:31:18,878 - MainThread - root - INFO - end create co-visitaion chunck: 4
+2023-06-04 10:31:18,879 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 10:31:18,879 - MainThread - root - INFO - start create co-visitaion start from 10 in chunck 5
+2023-06-04 10:31:18,881 - MainThread - root - INFO - end create co-visitaion start from 10 in chunck 5
+2023-06-04 10:31:18,882 - MainThread - root - INFO - end create co-visitaion chunck: 5
+2023-06-04 10:31:18,884 - MainThread - root - INFO - end: create candidate by co-visitation
+2023-06-04 10:31:18,884 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 10:31:53,795 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 10:31:53,796 - MainThread - root - INFO - (param)target: validation
+2023-06-04 10:31:53,797 - MainThread - root - INFO - (param)is_partial: 1
+2023-06-04 10:31:56,670 - MainThread - root - INFO - start: create candidate by co-visitation
+2023-06-04 10:31:56,671 - MainThread - root - INFO - start create co-visitaion part: 0
+2023-06-04 10:31:56,671 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 10:31:56,672 - MainThread - root - INFO - start create co-visitaion start from 0 in chunck 0
+2023-06-04 10:31:56,673 - MainThread - root - INFO - end create co-visitaion start from 0 in chunck 0
+2023-06-04 10:31:56,674 - MainThread - root - INFO - end create co-visitaion chunck: 0
+2023-06-04 10:31:56,674 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 10:31:56,675 - MainThread - root - INFO - start create co-visitaion start from 2 in chunck 1
+2023-06-04 10:31:56,676 - MainThread - root - INFO - end create co-visitaion start from 2 in chunck 1
+2023-06-04 10:31:56,676 - MainThread - root - INFO - end create co-visitaion chunck: 1
+2023-06-04 10:31:56,677 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 10:31:56,678 - MainThread - root - INFO - start create co-visitaion start from 4 in chunck 2
+2023-06-04 10:31:56,678 - MainThread - root - INFO - end create co-visitaion start from 4 in chunck 2
+2023-06-04 10:31:56,679 - MainThread - root - INFO - end create co-visitaion chunck: 2
+2023-06-04 10:31:56,679 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 10:31:56,680 - MainThread - root - INFO - start create co-visitaion start from 6 in chunck 3
+2023-06-04 10:31:56,681 - MainThread - root - INFO - end create co-visitaion start from 6 in chunck 3
+2023-06-04 10:31:56,681 - MainThread - root - INFO - end create co-visitaion chunck: 3
+2023-06-04 10:31:56,682 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 10:31:56,682 - MainThread - root - INFO - start create co-visitaion start from 8 in chunck 4
+2023-06-04 10:31:56,683 - MainThread - root - INFO - end create co-visitaion start from 8 in chunck 4
+2023-06-04 10:31:56,683 - MainThread - root - INFO - end create co-visitaion chunck: 4
+2023-06-04 10:31:56,684 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 10:31:56,685 - MainThread - root - INFO - start create co-visitaion start from 10 in chunck 5
+2023-06-04 10:31:56,686 - MainThread - root - INFO - end create co-visitaion start from 10 in chunck 5
+2023-06-04 10:31:56,686 - MainThread - root - INFO - end create co-visitaion chunck: 5
+2023-06-04 10:31:56,687 - MainThread - root - INFO - start create co-visitaion part: 1
+2023-06-04 10:31:56,687 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 10:31:56,688 - MainThread - root - INFO - start create co-visitaion start from 0 in chunck 0
+2023-06-04 10:31:56,689 - MainThread - root - INFO - end create co-visitaion start from 0 in chunck 0
+2023-06-04 10:31:56,689 - MainThread - root - INFO - end create co-visitaion chunck: 0
+2023-06-04 10:31:56,690 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 10:31:56,691 - MainThread - root - INFO - start create co-visitaion start from 2 in chunck 1
+2023-06-04 10:31:56,692 - MainThread - root - INFO - end create co-visitaion start from 2 in chunck 1
+2023-06-04 10:31:56,692 - MainThread - root - INFO - end create co-visitaion chunck: 1
+2023-06-04 10:31:56,692 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 10:31:56,693 - MainThread - root - INFO - start create co-visitaion start from 4 in chunck 2
+2023-06-04 10:31:56,694 - MainThread - root - INFO - end create co-visitaion start from 4 in chunck 2
+2023-06-04 10:31:56,694 - MainThread - root - INFO - end create co-visitaion chunck: 2
+2023-06-04 10:31:56,694 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 10:31:56,695 - MainThread - root - INFO - start create co-visitaion start from 6 in chunck 3
+2023-06-04 10:31:56,696 - MainThread - root - INFO - end create co-visitaion start from 6 in chunck 3
+2023-06-04 10:31:56,697 - MainThread - root - INFO - end create co-visitaion chunck: 3
+2023-06-04 10:31:56,697 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 10:31:56,698 - MainThread - root - INFO - start create co-visitaion start from 8 in chunck 4
+2023-06-04 10:31:56,698 - MainThread - root - INFO - end create co-visitaion start from 8 in chunck 4
+2023-06-04 10:31:56,699 - MainThread - root - INFO - end create co-visitaion chunck: 4
+2023-06-04 10:31:56,699 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 10:31:56,700 - MainThread - root - INFO - start create co-visitaion start from 10 in chunck 5
+2023-06-04 10:31:56,701 - MainThread - root - INFO - end create co-visitaion start from 10 in chunck 5
+2023-06-04 10:31:56,701 - MainThread - root - INFO - end create co-visitaion chunck: 5
+2023-06-04 10:31:56,701 - MainThread - root - INFO - start create co-visitaion part: 2
+2023-06-04 10:31:56,702 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 10:31:56,703 - MainThread - root - INFO - start create co-visitaion start from 0 in chunck 0
+2023-06-04 10:31:56,704 - MainThread - root - INFO - end create co-visitaion start from 0 in chunck 0
+2023-06-04 10:31:56,704 - MainThread - root - INFO - end create co-visitaion chunck: 0
+2023-06-04 10:31:56,705 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 10:31:56,705 - MainThread - root - INFO - start create co-visitaion start from 2 in chunck 1
+2023-06-04 10:31:56,706 - MainThread - root - INFO - end create co-visitaion start from 2 in chunck 1
+2023-06-04 10:31:56,706 - MainThread - root - INFO - end create co-visitaion chunck: 1
+2023-06-04 10:31:56,707 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 10:31:56,707 - MainThread - root - INFO - start create co-visitaion start from 4 in chunck 2
+2023-06-04 10:31:56,708 - MainThread - root - INFO - end create co-visitaion start from 4 in chunck 2
+2023-06-04 10:31:56,708 - MainThread - root - INFO - end create co-visitaion chunck: 2
+2023-06-04 10:31:56,709 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 10:31:56,709 - MainThread - root - INFO - start create co-visitaion start from 6 in chunck 3
+2023-06-04 10:31:56,710 - MainThread - root - INFO - end create co-visitaion start from 6 in chunck 3
+2023-06-04 10:31:56,710 - MainThread - root - INFO - end create co-visitaion chunck: 3
+2023-06-04 10:31:56,711 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 10:31:56,711 - MainThread - root - INFO - start create co-visitaion start from 8 in chunck 4
+2023-06-04 10:31:56,712 - MainThread - root - INFO - end create co-visitaion start from 8 in chunck 4
+2023-06-04 10:31:56,712 - MainThread - root - INFO - end create co-visitaion chunck: 4
+2023-06-04 10:31:56,713 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 10:31:56,714 - MainThread - root - INFO - start create co-visitaion start from 10 in chunck 5
+2023-06-04 10:31:56,714 - MainThread - root - INFO - end create co-visitaion start from 10 in chunck 5
+2023-06-04 10:31:56,715 - MainThread - root - INFO - end create co-visitaion chunck: 5
+2023-06-04 10:31:56,715 - MainThread - root - INFO - start create co-visitaion part: 3
+2023-06-04 10:31:56,715 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 10:31:56,716 - MainThread - root - INFO - start create co-visitaion start from 0 in chunck 0
+2023-06-04 10:31:56,717 - MainThread - root - INFO - end create co-visitaion start from 0 in chunck 0
+2023-06-04 10:31:56,718 - MainThread - root - INFO - end create co-visitaion chunck: 0
+2023-06-04 10:31:56,718 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 10:31:56,719 - MainThread - root - INFO - start create co-visitaion start from 2 in chunck 1
+2023-06-04 10:31:56,720 - MainThread - root - INFO - end create co-visitaion start from 2 in chunck 1
+2023-06-04 10:31:56,720 - MainThread - root - INFO - end create co-visitaion chunck: 1
+2023-06-04 10:31:56,721 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 10:31:56,721 - MainThread - root - INFO - start create co-visitaion start from 4 in chunck 2
+2023-06-04 10:31:56,722 - MainThread - root - INFO - end create co-visitaion start from 4 in chunck 2
+2023-06-04 10:31:56,722 - MainThread - root - INFO - end create co-visitaion chunck: 2
+2023-06-04 10:31:56,723 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 10:31:56,723 - MainThread - root - INFO - start create co-visitaion start from 6 in chunck 3
+2023-06-04 10:31:56,724 - MainThread - root - INFO - end create co-visitaion start from 6 in chunck 3
+2023-06-04 10:31:56,724 - MainThread - root - INFO - end create co-visitaion chunck: 3
+2023-06-04 10:31:56,725 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 10:31:56,725 - MainThread - root - INFO - start create co-visitaion start from 8 in chunck 4
+2023-06-04 10:31:56,726 - MainThread - root - INFO - end create co-visitaion start from 8 in chunck 4
+2023-06-04 10:31:56,726 - MainThread - root - INFO - end create co-visitaion chunck: 4
+2023-06-04 10:31:56,727 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 10:31:56,727 - MainThread - root - INFO - start create co-visitaion start from 10 in chunck 5
+2023-06-04 10:31:56,728 - MainThread - root - INFO - end create co-visitaion start from 10 in chunck 5
+2023-06-04 10:31:56,728 - MainThread - root - INFO - end create co-visitaion chunck: 5
+2023-06-04 10:31:56,729 - MainThread - root - INFO - end: create candidate by co-visitation
+2023-06-04 10:31:56,729 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 10:37:20,793 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 10:37:20,794 - MainThread - root - INFO - (param)target: validation
+2023-06-04 10:37:20,794 - MainThread - root - INFO - (param)is_partial: 1
+2023-06-04 10:37:23,246 - MainThread - root - INFO - start: create candidate by co-visitation
+2023-06-04 10:37:23,248 - MainThread - root - INFO - start create co-visitaion part: 0
+2023-06-04 10:37:23,248 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 10:37:23,249 - MainThread - root - INFO - start create co-visitaion start from 0 in chunck 0
+2023-06-04 10:37:23,268 - MainThread - root - INFO - end create co-visitaion start from 0 in chunck 0
+2023-06-04 10:37:23,269 - MainThread - root - ERROR - 
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 44, in main
+    CoVisitaion.covisit_candidate()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\create_covisit.py", line 154, in covisit_candidate
+    assert set(self.files) == set(read_files)
+AssertionError
+2023-06-04 10:37:56,310 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 10:37:56,311 - MainThread - root - INFO - (param)target: validation
+2023-06-04 10:37:56,311 - MainThread - root - INFO - (param)is_partial: 1
+2023-06-04 10:37:58,506 - MainThread - root - INFO - start: create candidate by co-visitation
+2023-06-04 10:37:58,506 - MainThread - root - INFO - start create co-visitaion part: 0
+2023-06-04 10:37:58,506 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 10:37:58,507 - MainThread - root - INFO - start create co-visitaion start from 0 in chunck 0
+2023-06-04 10:37:58,508 - MainThread - root - INFO - end create co-visitaion start from 0 in chunck 0
+2023-06-04 10:40:54,246 - MainThread - root - ERROR - 
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 44, in main
+    CoVisitaion.covisit_candidate()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\create_covisit.py", line 155, in covisit_candidate
+    import pdb;pdb.set_trace()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\create_covisit.py", line 155, in covisit_candidate
+    import pdb;pdb.set_trace()
+  File "C:\Users\hiroa\anaconda3\envs\env0\lib\bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "C:\Users\hiroa\anaconda3\envs\env0\lib\bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+2023-06-04 10:40:59,522 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 10:40:59,522 - MainThread - root - INFO - (param)target: validation
+2023-06-04 10:40:59,523 - MainThread - root - INFO - (param)is_partial: 1
+2023-06-04 10:41:01,649 - MainThread - root - INFO - start: create candidate by co-visitation
+2023-06-04 10:41:01,650 - MainThread - root - INFO - start create co-visitaion part: 0
+2023-06-04 10:41:01,651 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 10:41:01,652 - MainThread - root - INFO - start create co-visitaion start from 0 in chunck 0
+2023-06-04 10:41:01,653 - MainThread - root - INFO - end create co-visitaion start from 0 in chunck 0
+2023-06-04 10:41:13,641 - MainThread - root - ERROR - 
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 44, in main
+    CoVisitaion.covisit_candidate()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\create_covisit.py", line 156, in covisit_candidate
+    assert set(self.files) == set(read_files)
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\create_covisit.py", line 156, in covisit_candidate
+    assert set(self.files) == set(read_files)
+  File "C:\Users\hiroa\anaconda3\envs\env0\lib\bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "C:\Users\hiroa\anaconda3\envs\env0\lib\bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+2023-06-04 10:42:28,514 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 10:42:28,515 - MainThread - root - INFO - (param)target: validation
+2023-06-04 10:42:28,516 - MainThread - root - INFO - (param)is_partial: 1
+2023-06-04 10:42:30,184 - MainThread - root - INFO - start: create candidate by co-visitation
+2023-06-04 10:42:30,186 - MainThread - root - INFO - start create co-visitaion part: 0
+2023-06-04 10:42:30,186 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 10:42:30,189 - MainThread - root - INFO - start create co-visitaion start from 0 in chunck 0
+2023-06-04 10:42:30,190 - MainThread - root - INFO - end create co-visitaion start from 0 in chunck 0
+2023-06-04 10:42:30,191 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 10:42:30,192 - MainThread - root - INFO - start create co-visitaion start from 2 in chunck 1
+2023-06-04 10:42:30,192 - MainThread - root - INFO - end create co-visitaion start from 2 in chunck 1
+2023-06-04 10:42:30,193 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 10:42:30,194 - MainThread - root - INFO - start create co-visitaion start from 4 in chunck 2
+2023-06-04 10:42:30,195 - MainThread - root - INFO - end create co-visitaion start from 4 in chunck 2
+2023-06-04 10:42:30,196 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 10:42:30,197 - MainThread - root - INFO - start create co-visitaion start from 6 in chunck 3
+2023-06-04 10:42:30,198 - MainThread - root - INFO - end create co-visitaion start from 6 in chunck 3
+2023-06-04 10:42:30,198 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 10:42:30,199 - MainThread - root - INFO - start create co-visitaion start from 8 in chunck 4
+2023-06-04 10:42:30,200 - MainThread - root - INFO - end create co-visitaion start from 8 in chunck 4
+2023-06-04 10:42:30,201 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 10:42:30,202 - MainThread - root - INFO - start create co-visitaion start from 10 in chunck 5
+2023-06-04 10:42:30,203 - MainThread - root - INFO - end create co-visitaion start from 10 in chunck 5
+2023-06-04 10:42:50,706 - MainThread - root - INFO - end create co-visitaion chunck: 5
+2023-06-04 10:42:50,707 - MainThread - root - INFO - end: create candidate by co-visitation
+2023-06-04 10:42:50,707 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
