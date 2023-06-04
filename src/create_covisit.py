@@ -3,51 +3,70 @@ import numpy as np
 import glob
 import random
 
-import os, sys, gc
+import os, sys, gc, yaml
 import logging.config
 
 DATA_DIR = os.getenv('DATA_DIR')
-# OUTPUT_DIR = os.getenv('OUTPUT_DIR')
+OUTPUT_DIR = os.getenv('OUTPUT_DIR')
 # LOG_DIR = os.getenv('LOG_DIR')
-
+CONFIG_DIR = os.getenv('CONFIG_DIR')
 
 class CreateCoVisitaion():
 
-    # def __init__(self) -> None:
-        # self.target = target
-        # self.is_partial = is_partial
+    def __init__(self, setting_name, type_label) -> None:
+        self.setting_name = setting_name
+        self.type_label = type_label
 
-    def check_existing_file(self):
-        '''既に既存のco-visitationファイルがあるかチェック
+    def main(self):
+        '''
+        既に既存のco-visitationファイルがあるかチェック
+        -> ない場合、co-visitaion作成を実行
         '''
 
-        
+        output_dir_path = os.path.join(OUTPUT_DIR, 'covisit', f'{self.setting_name}')
+        if not os.path.exists(output_dir_path):
+            logging.info(f'start create co-visit {self.setting_name}')
+            self.output_dir_path = output_dir_path
+            os.mkdir(output_dir_path)
 
-        return
+            self._load_config_file()
+            self._data_collection()
+            self._create_covisit_candidate()
+            logging.info(f'end create co-visit {self.setting_name}')
+    
+    def _load_config_file(self):
+        '''設定ymlファイルを読み込み
+        '''
 
-    def data_collection(self, target, is_partial):
+        logging.info(f'start loading co-visit configuration')
+        with open(os.path.join(CONFIG_DIR, 'config_covisitation.yml')) as file:
+            config_covisit = yaml.safe_load(file.read())
+        self.config = config_covisit[self.setting_name]
+        logging.info(f'end loading co-visit configuration')
+
+    def _data_collection(self):
         '''data collection
         '''
 
-        TYPE_LABEL = {'clicks':0, 'carts':1, 'orders':2}
-
+        logging.info(f'start loading data for create co-visitaion')
         # data path取得
-        if target == 'validation':
+        if self.config['target'] == 'validation':
             self.files = sorted(glob.glob(
                 os.path.join(DATA_DIR, 'validation', '*_parquet', '*')
             ))
-        elif target == 'test':
+        elif self.config['target'] == 'test':
             self.files = sorted(glob.glob(
                 os.path.join(DATA_DIR, 'chuncked_data', '*_parquet', '*')
             ))
 
         # 一部取得の場合
-        if bool(is_partial):
+        if bool(self.config['is_partial']):
             self.files = random.choices(self.files, k= 12)
             
         # data読み込み
         self.data = {}
-        for p in self.files: self.data[p] = self._read_file_to_cache(p, TYPE_LABEL)
+        for p in self.files: self.data[p] = self._read_file_to_cache(p, self.type_label)
+        logging.info(f'end loading data for create co-visitaion')
 
     def _read_file_to_cache(self, f, TYPE_LABEL):
         df = pd.read_parquet(f)
@@ -55,7 +74,7 @@ class CreateCoVisitaion():
         df['type'] = df['type'].map(TYPE_LABEL).astype('int8')
         return df
 
-    def covisit_candidate(self):
+    def _create_covisit_candidate(self):
         '''Co-Visitaion履歴から候補作成
         '''
 
@@ -66,15 +85,15 @@ class CreateCoVisitaion():
         READ_CT = 5
         CHUNK_LEN = int( np.ceil( len(self.files)/CHUNK_SIZE ) )
 
-        TYPE_WEIGHT = {0:1, 1:6, 2:3}
-        TOP = 50
+        # TYPE_WEIGHT = {0:1, 1:6, 2:3}
+        # TOP = 50
 
         logging.info(f'start: create candidate by co-visitation')
 
         # メモリの関係上4つに分ける
         # ペア作成元のaidを4分割
         for part in range(DISK_SIZE):
-            if part > 0: break
+            # if part > 0: break
             logging.info(f'start create co-visitaion part: {part}')
 
             # 全sessionではなく一部sessionに絞る(メモリ対策)
@@ -82,7 +101,7 @@ class CreateCoVisitaion():
             # 限定１：a,bの範囲ないに限定(このまとまりをchunck)            
             read_files = []
             for chunk in range(CHUNK_SIZE):
-                logging.info(f'start create co-visitaion chunck: {chunk}')
+                logging.info(f'start create co-visitaion chunck: {chunk} in part {part}')
 
                 a = chunk * CHUNK_LEN
                 b = min( (chunk+1)*CHUNK_LEN, len(self.files))
@@ -105,7 +124,7 @@ class CreateCoVisitaion():
                     df = pd.concat(adds)
 
                     # session x aid ごとに行動回数を重みづけしてsum
-                    df['wgt'] = df['type'].map(TYPE_WEIGHT)
+                    df['wgt'] = df['type'].map(self.config['type_weight'])
                     df['wgt'] = df['wgt'].astype('float32')
                     df = df.groupby(['session', 'aid']).wgt.sum()
                     df = df.reset_index()
@@ -133,6 +152,7 @@ class CreateCoVisitaion():
                 else: tmp = tmp.add(tmp2, fill_value= 0)
                 del tmp2, df
                 _ = gc.collect()
+                logging.info(f'end create co-visitaion chunck: {chunk} in part {part}')
 
             # 全ファイルを読み込んでいるかを確認
             assert set(self.files) == set(read_files)
@@ -142,30 +162,16 @@ class CreateCoVisitaion():
             # save top N
             tmp = tmp.reset_index(drop= True)
             tmp['n'] = tmp.groupby('aid_x').aid_y.cumcount()
-            tmp = tmp[tmp.n < TOP].copy()
-            tmp.to_parquet()
+            tmp = tmp[tmp.n < self.config['top']].copy()
 
+            # save file
+            # partごとに保存
+            output_path = os.path.join(self.output_dir_path, f'part{part}.pqt')
+            tmp.to_parquet(output_path)
+            del tmp
+            _ = gc.collect()
 
-
-            logging.info(f'end create co-visitaion chunck: {chunk}')
-
-
-
-
-
-
-
-                    
-
-
-
-
-
-
-
-
-        
-
+            logging.info(f'end create co-visitaion part: {part}')
 
         logging.info(f'end: create candidate by co-visitation')
             

@@ -20,5 +20,4 @@ done
 source ${BASE_DIR}/configs/config.sh
 set -euC
 
-
 python ${BASE_DIR}/run.py -t ${TARGET} -c ${COVISIT}

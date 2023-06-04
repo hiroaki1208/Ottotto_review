@@ -876,3 +876,101 @@ bdb.BdbQuit
 2023-06-04 10:48:55,013 - MainThread - root - INFO - end create co-visitaion chunck: 5
 2023-06-04 10:48:55,013 - MainThread - root - INFO - end: create candidate by co-visitation
 2023-06-04 10:48:55,038 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 22:46:09,978 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 22:46:09,979 - MainThread - root - INFO - (param)target: validation
+2023-06-04 22:46:09,980 - MainThread - root - INFO - (param)covisitation setting: setting0
+2023-06-04 22:46:09,982 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 22:47:08,518 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 22:47:08,519 - MainThread - root - INFO - (param)target: validation
+2023-06-04 22:47:08,520 - MainThread - root - INFO - (param)covisitation setting: setting0
+2023-06-04 22:47:08,524 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 22:48:19,801 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 22:48:19,802 - MainThread - root - INFO - (param)target: validation
+2023-06-04 22:48:19,803 - MainThread - root - INFO - (param)covisitation setting: setting0
+2023-06-04 22:48:19,805 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 22:49:14,105 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 22:49:14,106 - MainThread - root - INFO - (param)target: validation
+2023-06-04 22:49:14,106 - MainThread - root - INFO - (param)covisitation setting: setting0
+2023-06-04 22:49:14,108 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 22:50:13,166 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 22:50:13,167 - MainThread - root - INFO - (param)target: validation
+2023-06-04 22:50:13,168 - MainThread - root - INFO - (param)covisitation setting: setting0
+2023-06-04 22:50:13,170 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 22:50:33,352 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 22:50:33,353 - MainThread - root - INFO - (param)target: validation
+2023-06-04 22:50:33,353 - MainThread - root - INFO - (param)covisitation setting: setting0
+2023-06-04 22:50:33,355 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 22:50:59,727 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 22:50:59,728 - MainThread - root - INFO - (param)target: validation
+2023-06-04 22:50:59,728 - MainThread - root - INFO - (param)covisitation setting: setting0
+2023-06-04 22:50:59,730 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 22:59:45,828 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 22:59:45,829 - MainThread - root - INFO - (param)target: validation
+2023-06-04 22:59:45,829 - MainThread - root - INFO - (param)covisitation setting: setting0
+2023-06-04 22:59:45,831 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 23:00:50,573 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 23:00:50,574 - MainThread - root - INFO - (param)target: validation
+2023-06-04 23:00:50,575 - MainThread - root - INFO - (param)covisitation setting: setting0
+2023-06-04 23:00:50,577 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 23:01:10,682 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 23:01:10,683 - MainThread - root - INFO - (param)target: validation
+2023-06-04 23:01:10,684 - MainThread - root - INFO - (param)covisitation setting: setting0
+2023-06-04 23:01:10,687 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-05 07:59:02,506 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-05 07:59:02,507 - MainThread - root - INFO - (param)target: validation
+2023-06-05 07:59:02,508 - MainThread - root - INFO - (param)covisitation setting: setting0
+2023-06-05 07:59:02,512 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-05 08:01:51,311 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-05 08:01:51,313 - MainThread - root - INFO - (param)target: validation
+2023-06-05 08:01:51,314 - MainThread - root - INFO - (param)covisitation setting: setting0
+2023-06-05 08:01:51,318 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-05 08:24:20,911 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-05 08:24:20,911 - MainThread - root - INFO - (param)target: validation
+2023-06-05 08:24:20,913 - MainThread - root - INFO - (param)covisitation setting: setting0
+2023-06-05 08:24:20,913 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-05 08:25:19,694 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-05 08:25:19,695 - MainThread - root - INFO - (param)target: validation
+2023-06-05 08:25:19,696 - MainThread - root - INFO - (param)covisitation setting: setting0
+2023-06-05 08:25:19,697 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-05 08:25:36,562 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-05 08:25:36,563 - MainThread - root - INFO - (param)target: validation
+2023-06-05 08:25:36,564 - MainThread - root - INFO - (param)covisitation setting: setting0
+2023-06-05 08:25:36,566 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-05 08:29:03,703 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-05 08:29:03,705 - MainThread - root - INFO - (param)target: validation
+2023-06-05 08:29:03,706 - MainThread - root - INFO - (param)covisitation setting: setting0
+2023-06-05 08:29:03,707 - MainThread - root - INFO - start create co-visit setting0
+2023-06-05 08:29:03,709 - MainThread - root - INFO - start loading co-visit configuration
+2023-06-05 08:29:03,714 - MainThread - root - INFO - end loading co-visit configuration
+2023-06-05 08:29:03,715 - MainThread - root - INFO - start loading data for create co-visitaion
+2023-06-05 08:29:10,073 - MainThread - root - INFO - end loading data for create co-visitaion
+2023-06-05 08:29:10,074 - MainThread - root - INFO - start: create candidate by co-visitation
+2023-06-05 08:29:10,075 - MainThread - root - INFO - start create co-visitaion part: 0
+2023-06-05 08:29:10,076 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-05 08:29:10,076 - MainThread - root - INFO - start create co-visitaion start from 0 in chunck 0
+2023-06-05 08:29:24,839 - MainThread - root - INFO - end create co-visitaion start from 0 in chunck 0
+2023-06-05 08:29:24,863 - MainThread - root - INFO - end create co-visitaion chunck: 0
+2023-06-05 08:29:24,864 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-05 08:29:24,864 - MainThread - root - INFO - start create co-visitaion start from 2 in chunck 1
+2023-06-05 08:29:26,983 - MainThread - root - INFO - end create co-visitaion start from 2 in chunck 1
+2023-06-05 08:29:49,008 - MainThread - root - INFO - end create co-visitaion chunck: 1
+2023-06-05 08:29:49,009 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-05 08:29:49,010 - MainThread - root - INFO - start create co-visitaion start from 4 in chunck 2
+2023-06-05 08:30:08,216 - MainThread - root - INFO - end create co-visitaion start from 4 in chunck 2
+2023-06-05 08:31:10,787 - MainThread - root - INFO - end create co-visitaion chunck: 2
+2023-06-05 08:31:10,791 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-05 08:31:10,792 - MainThread - root - INFO - start create co-visitaion start from 6 in chunck 3
+2023-06-05 08:31:16,506 - MainThread - root - INFO - end create co-visitaion start from 6 in chunck 3
+2023-06-05 08:32:28,532 - MainThread - root - INFO - end create co-visitaion chunck: 3
+2023-06-05 08:32:28,551 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-05 08:32:28,552 - MainThread - root - INFO - start create co-visitaion start from 8 in chunck 4
+2023-06-05 08:32:36,156 - MainThread - root - INFO - end create co-visitaion start from 8 in chunck 4
+2023-06-05 08:33:53,177 - MainThread - root - INFO - end create co-visitaion chunck: 4
+2023-06-05 08:33:53,193 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-05 08:33:53,194 - MainThread - root - INFO - start create co-visitaion start from 10 in chunck 5
+2023-06-05 08:34:12,929 - MainThread - root - INFO - end create co-visitaion start from 10 in chunck 5
+2023-06-05 08:37:35,823 - MainThread - root - INFO - end create co-visitaion chunck: 5
+2023-06-05 08:37:57,567 - MainThread - root - INFO - end create co-visitaion part: 0
+2023-06-05 08:37:57,568 - MainThread - root - INFO - end: create candidate by co-visitation
+2023-06-05 08:37:57,568 - MainThread - root - INFO - end create co-visit setting0
+2023-06-05 08:37:57,569 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review

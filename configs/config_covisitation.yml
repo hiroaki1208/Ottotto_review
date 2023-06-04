@@ -5,3 +5,4 @@ setting0:
     1: 6
     2: 3
   is_partial: 1
+  target: 'validation'
