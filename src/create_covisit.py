@@ -80,14 +80,12 @@ class CreateCoVisitaion():
 
         TYPE_WEIGHT = {0:1, 1:6, 2:3}
 
-        # logging.info(f'start: {__file__} covisit_candidate')
         logging.info(f'start: create candidate by co-visitation')
 
         # メモリの関係上4つに分ける
         # ペア作成元のaidを4分割
         for part in range(DISK_SIZE):
             if part > 0: break
-            print(f'part: {part}')
             logging.info(f'start create co-visitaion part: {part}')
 
             # 全sessionではなく一部sessionに絞る(メモリ対策)
@@ -95,20 +93,15 @@ class CreateCoVisitaion():
             # 限定１：a,bの範囲ないに限定(このまとまりをchunck)            
             read_files = []
             for chunk in range(CHUNK_SIZE):
-                # if chunk > 0: break
                 logging.info(f'start create co-visitaion chunck: {chunk}')
-                print(f'chunk: {chunk}')
 
                 a = chunk * CHUNK_LEN
                 b = min( (chunk+1)*CHUNK_LEN, len(self.files))
-                print(f'a: {a}')
-                print(f'b: {b}')
 
                 # 限定２：a,bの範囲内で、更にREAD_CTごとに限定
                 # kは起点、kからREAD_CT分のファイルを取得
                 for k in range(a,b,READ_CT):
                     logging.info(f'start create co-visitaion start from {k} in chunck {chunk}')
-                    print(f'k: {k}')
 
                     adds = []
                     for i in range(READ_CT):
@@ -116,7 +109,6 @@ class CreateCoVisitaion():
                         # 今回読み込む範囲は限定２のa,bなので
                         if k+i >= b: break
 
-                        print(k+i)                      
                         path = self.files[k+i]
                         add = self.data[path]
                         adds.append(add)
@@ -152,7 +144,7 @@ class CreateCoVisitaion():
                 else: tmp = tmp.add(tmp2, fill_value= 0)
                 del tmp2, df
                 _ = gc.collect()
-                
+
             assert set(self.files) == set(read_files)
             logging.info(f'end create co-visitaion chunck: {chunk}')
 

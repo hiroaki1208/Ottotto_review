@@ -850,3 +850,29 @@ bdb.BdbQuit
 2023-06-04 10:42:50,706 - MainThread - root - INFO - end create co-visitaion chunck: 5
 2023-06-04 10:42:50,707 - MainThread - root - INFO - end: create candidate by co-visitation
 2023-06-04 10:42:50,707 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 10:45:18,285 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-04 10:45:18,285 - MainThread - root - INFO - (param)target: validation
+2023-06-04 10:45:18,286 - MainThread - root - INFO - (param)is_partial: 1
+2023-06-04 10:45:20,079 - MainThread - root - INFO - start: create candidate by co-visitation
+2023-06-04 10:45:20,080 - MainThread - root - INFO - start create co-visitaion part: 0
+2023-06-04 10:45:20,081 - MainThread - root - INFO - start create co-visitaion chunck: 0
+2023-06-04 10:45:20,081 - MainThread - root - INFO - start create co-visitaion start from 0 in chunck 0
+2023-06-04 10:45:22,765 - MainThread - root - INFO - end create co-visitaion start from 0 in chunck 0
+2023-06-04 10:45:22,789 - MainThread - root - INFO - start create co-visitaion chunck: 1
+2023-06-04 10:45:22,790 - MainThread - root - INFO - start create co-visitaion start from 2 in chunck 1
+2023-06-04 10:45:30,344 - MainThread - root - INFO - end create co-visitaion start from 2 in chunck 1
+2023-06-04 10:45:48,293 - MainThread - root - INFO - start create co-visitaion chunck: 2
+2023-06-04 10:45:48,294 - MainThread - root - INFO - start create co-visitaion start from 4 in chunck 2
+2023-06-04 10:45:50,139 - MainThread - root - INFO - end create co-visitaion start from 4 in chunck 2
+2023-06-04 10:46:11,607 - MainThread - root - INFO - start create co-visitaion chunck: 3
+2023-06-04 10:46:11,609 - MainThread - root - INFO - start create co-visitaion start from 6 in chunck 3
+2023-06-04 10:46:22,178 - MainThread - root - INFO - end create co-visitaion start from 6 in chunck 3
+2023-06-04 10:47:06,051 - MainThread - root - INFO - start create co-visitaion chunck: 4
+2023-06-04 10:47:06,052 - MainThread - root - INFO - start create co-visitaion start from 8 in chunck 4
+2023-06-04 10:47:08,397 - MainThread - root - INFO - end create co-visitaion start from 8 in chunck 4
+2023-06-04 10:47:53,201 - MainThread - root - INFO - start create co-visitaion chunck: 5
+2023-06-04 10:47:53,202 - MainThread - root - INFO - start create co-visitaion start from 10 in chunck 5
+2023-06-04 10:47:59,733 - MainThread - root - INFO - end create co-visitaion start from 10 in chunck 5
+2023-06-04 10:48:55,013 - MainThread - root - INFO - end create co-visitaion chunck: 5
+2023-06-04 10:48:55,013 - MainThread - root - INFO - end: create candidate by co-visitation
+2023-06-04 10:48:55,038 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
