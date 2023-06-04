@@ -14,12 +14,10 @@ DATA_DIR = os.getenv('DATA_DIR')
 class CreateCoVisitaion():
 
     # def __init__(self) -> None:
-    # def __init__(self, target, is_partial) -> None:
         # self.target = target
         # self.is_partial = is_partial
 
 
-    # def data_collection(self):
     def data_collection(self, target, is_partial):
         '''data collection
         '''
@@ -28,35 +26,20 @@ class CreateCoVisitaion():
 
         # data path取得
         if target == 'validation':
-            # self.files_train = sorted(glob.glob(
-            #     os.path.join(DATA_DIR, 'validation', 'train_parquet', '*')
-            # ))
-            # self.files_test = sorted(glob.glob(
-            #     os.path.join(DATA_DIR, 'validation', 'test_parquet', '*')
-            # ))
             self.files = sorted(glob.glob(
                 os.path.join(DATA_DIR, 'validation', '*_parquet', '*')
             ))
         elif target == 'test':
-            self.files_train = sorted(glob.glob(
-                os.path.join(DATA_DIR, 'chunked_date', 'train_parquet', '*')
-            ))
-            self.files_test = sorted(glob.glob(
-                os.path.join(DATA_DIR, 'chunked_data', 'test_parquet', '*')
+            self.files = sorted(glob.glob(
+                os.path.join(DATA_DIR, 'chuncked_data', '*_parquet', '*')
             ))
 
         # 一部取得の場合
         if bool(is_partial):
-            # self.files_train = self.files_train[:10]
-            # self.files_test = self.files_test[:10]
             self.files = random.choices(self.files, k= 12)
             
         # data読み込み
-        # self.data_train = {}
-        # self.data_test = {}
         self.data = {}
-        # for p in self.files_train: self.data_train[p] = self._read_file_to_cache(p, TYPE_LABEL)
-        # for p in self.files_test: self.data_test[p] = self._read_file_to_cache(p, TYPE_LABEL)
         for p in self.files: self.data[p] = self._read_file_to_cache(p, TYPE_LABEL)
 
     def _read_file_to_cache(self, f, TYPE_LABEL):
@@ -69,14 +52,12 @@ class CreateCoVisitaion():
         '''Co-Visitaion履歴から候補作成
         '''
 
-
         DISK_SIZE = 4
         SIZE = 1.86e6 / DISK_SIZE
 
         CHUNK_SIZE = 6
         READ_CT = 5
         CHUNK_LEN = int( np.ceil( len(self.files)/CHUNK_SIZE ) )
-        print(f'chunk length: {CHUNK_LEN}')
 
         TYPE_WEIGHT = {0:1, 1:6, 2:3}
 
