@@ -6,6 +6,7 @@ import argparse
 import logging.config
 
 import models.create_covisit
+import src.prediction
 
 DATA_DIR = os.getenv('DATA_DIR')
 OUTPUT_DIR = os.getenv('OUTPUT_DIR')
@@ -50,9 +51,6 @@ def main():
         os.mkdir(result_config_dir)
         create_result_config(result_config_dir, args)
 
-
-
-        
         logging.info(f'start: {base_dir}')
         logging.info(f'(param)target: {args.target}')
         # logging.info(f'(param)is_partial: {args.is_partial}')
@@ -60,12 +58,17 @@ def main():
 
         # 特徴量
 
-        # # 予測
-        # ## co-visitaion
-        # CoVisitaion = models.create_covisit.CreateCoVisitaion(
-        #     args.covisit, TYPE_LABEL
-        #     )
-        # CoVisitaion.main()
+        # create model
+        ## co-visitaion
+        CoVisitaion = models.create_covisit.CreateCoVisitaion(
+            args.covisit, TYPE_LABEL
+            )
+        CoVisitaion.main()
+
+        # prediction
+        Prediction = src.prediction.CreatePrediction(vars(args), TYPE_LABEL)
+        Prediction.main()
+
 
 
         logging.info(f'end: {base_dir}')

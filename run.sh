@@ -21,5 +21,6 @@ done
 
 source ${BASE_DIR}/configs/config.sh
 set -euC
+# conda activate env2
 
 python ${BASE_DIR}/run.py -s ${SUBFOLDER} -t ${TARGET} -c ${COVISIT}

@@ -1127,3 +1127,29 @@ bdb.BdbQuit
 2023-06-05 21:55:49,884 - MainThread - root - INFO - (param)target: validation
 2023-06-05 21:55:49,884 - MainThread - root - INFO - (param)covisitation setting: setting0
 2023-06-05 21:55:49,885 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-05 23:37:16,793 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-05 23:37:16,793 - MainThread - root - INFO - (param)target: validation
+2023-06-05 23:37:16,794 - MainThread - root - INFO - (param)covisitation setting: setting0
+2023-06-05 23:37:16,795 - MainThread - root - INFO - co-visit setting0 is already exits
+2023-06-05 23:37:16,796 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-05 23:38:55,989 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-05 23:38:55,990 - MainThread - root - INFO - (param)target: validation
+2023-06-05 23:38:55,991 - MainThread - root - INFO - (param)covisitation setting: setting0
+2023-06-05 23:38:55,992 - MainThread - root - INFO - co-visit setting0 is already exits
+2023-06-05 23:38:55,993 - MainThread - root - INFO - start loading test_df
+2023-06-05 23:38:55,994 - MainThread - root - ERROR - 'CreatePrediction' object has no attribute '_read_file_to_cache'
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 70, in main
+    Prediction.main()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\prediction.py", line 27, in main
+    test_df = self._load_test_df()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\prediction.py", line 75, in _load_test_df
+    add = self._read_file_to_cache(p, self.type_label)
+AttributeError: 'CreatePrediction' object has no attribute '_read_file_to_cache'
+2023-06-05 23:39:26,072 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-05 23:39:26,072 - MainThread - root - INFO - (param)target: validation
+2023-06-05 23:39:26,073 - MainThread - root - INFO - (param)covisitation setting: setting0
+2023-06-05 23:39:26,074 - MainThread - root - INFO - co-visit setting0 is already exits
+2023-06-05 23:39:26,075 - MainThread - root - INFO - start loading test_df
+2023-06-05 23:39:28,106 - MainThread - root - INFO - end loading data for test_df
+2023-06-05 23:39:31,649 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
