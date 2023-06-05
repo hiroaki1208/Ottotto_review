@@ -1,4 +1,5 @@
 setting0:
+  name: 'type_weight'
   top: 60
   type_weight:
     0: 1
@@ -8,10 +9,17 @@ setting0:
   target: 'validation'
 
 setting1:
+  name: 'type_weight'
   top: 60
   type_weight:
     0: 1
     1: 6
     2: 3
   is_partial: 0
+  target: 'validation'
+
+setting2:
+  name: 'buy2buy'
+  top: 60
+  is_partial: 1
   target: 'validation'
