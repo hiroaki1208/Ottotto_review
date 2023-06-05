@@ -7,6 +7,8 @@ cd ${BASE_DIR}
 TARGET='validation'
 # IS_PARTIAL=0
 COVISIT='setting0'
+SUBFOLDER=$(date '+%Y%m%d%H%M')
+
 # パラメータのパース
 while getopts t:c: OPT; do
     case ${OPT} in
@@ -20,4 +22,4 @@ done
 source ${BASE_DIR}/configs/config.sh
 set -euC
 
-python ${BASE_DIR}/run.py -t ${TARGET} -c ${COVISIT}
+python ${BASE_DIR}/run.py -s ${SUBFOLDER} -t ${TARGET} -c ${COVISIT}

@@ -1,15 +1,24 @@
 import pandas as pd
 import numpy as np
 
-import os, sys
+import os, sys, yaml
 import argparse
 import logging.config
 
-import src.create_covisit
+import models.create_covisit
 
 DATA_DIR = os.getenv('DATA_DIR')
 OUTPUT_DIR = os.getenv('OUTPUT_DIR')
 LOG_DIR = os.getenv('LOG_DIR')
+
+def create_result_config(result_dir, args):
+    '''計算設定を保存
+    '''
+
+    result_path = os.path.join(result_dir, 'result_config.yaml')
+    with open(result_path, 'w') as rp:
+        yaml.dump(vars(args), rp, default_flow_style=False)
+
 
 def main():
 
@@ -19,6 +28,7 @@ def main():
     )
 
     parser = argparse.ArgumentParser()
+    parser.add_argument('-s', '--subfolder')
     parser.add_argument('-t', '--target', default='validation'
                         , help= 'execution type(validation or test)'
                         , choices= ['validation', 'test'])
@@ -35,6 +45,14 @@ def main():
         logging.config.fileConfig(os.path.join(base_dir, 'logs', 'logging.ini')
                                   , defaults={'logdir': LOG_DIR})
         
+        # 計算設定保存
+        result_config_dir = os.path.join(OUTPUT_DIR, 'result', args.subfolder)
+        os.mkdir(result_config_dir)
+        create_result_config(result_config_dir, args)
+
+
+
+        
         logging.info(f'start: {base_dir}')
         logging.info(f'(param)target: {args.target}')
         # logging.info(f'(param)is_partial: {args.is_partial}')
@@ -42,12 +60,12 @@ def main():
 
         # 特徴量
 
-        # 予測
-        ## co-visitaion
-        CoVisitaion = src.create_covisit.CreateCoVisitaion(
-            args.covisit, TYPE_LABEL
-            )
-        CoVisitaion.main()
+        # # 予測
+        # ## co-visitaion
+        # CoVisitaion = models.create_covisit.CreateCoVisitaion(
+        #     args.covisit, TYPE_LABEL
+        #     )
+        # CoVisitaion.main()
 
 
         logging.info(f'end: {base_dir}')

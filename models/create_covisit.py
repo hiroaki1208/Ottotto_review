@@ -23,7 +23,7 @@ class CreateCoVisitaion():
         -> ない場合、co-visitaion作成を実行
         '''
 
-        output_dir_path = os.path.join(OUTPUT_DIR, 'covisit', f'{self.setting_name}')
+        output_dir_path = os.path.join(OUTPUT_DIR, 'model', 'covisit', f'{self.setting_name}')
         if not os.path.exists(output_dir_path):
             logging.info(f'start create co-visit {self.setting_name}')
             self.output_dir_path = output_dir_path
