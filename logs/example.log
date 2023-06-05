@@ -974,3 +974,148 @@ bdb.BdbQuit
 2023-06-05 08:37:57,568 - MainThread - root - INFO - end: create candidate by co-visitation
 2023-06-05 08:37:57,568 - MainThread - root - INFO - end create co-visit setting0
 2023-06-05 08:37:57,569 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-05 08:40:25,069 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-05 08:40:25,071 - MainThread - root - INFO - (param)target: validation
+2023-06-05 08:40:25,071 - MainThread - root - INFO - (param)covisitation setting: setting0
+2023-06-05 08:40:25,071 - MainThread - root - INFO - start create co-visit setting0
+2023-06-05 08:40:25,072 - MainThread - root - INFO - start loading co-visit configuration
+2023-06-05 08:40:25,073 - MainThread - root - INFO - end loading co-visit configuration
+2023-06-05 08:40:25,074 - MainThread - root - INFO - start loading data for create co-visitaion
+2023-06-05 08:40:27,272 - MainThread - root - INFO - end loading data for create co-visitaion
+2023-06-05 08:40:27,273 - MainThread - root - INFO - start: create candidate by co-visitation
+2023-06-05 08:40:27,273 - MainThread - root - INFO - start create co-visitaion part: 0
+2023-06-05 08:40:27,273 - MainThread - root - INFO - start create co-visitaion chunck: 0 in part 0
+2023-06-05 08:40:27,274 - MainThread - root - INFO - start create co-visitaion start from 0 in chunck 0
+2023-06-05 08:40:38,944 - MainThread - root - INFO - end create co-visitaion start from 0 in chunck 0
+2023-06-05 08:40:38,967 - MainThread - root - INFO - end create co-visitaion chunck: 0 in part 0
+2023-06-05 08:40:38,968 - MainThread - root - INFO - start create co-visitaion chunck: 1 in part 0
+2023-06-05 08:40:38,969 - MainThread - root - INFO - start create co-visitaion start from 2 in chunck 1
+2023-06-05 08:40:52,602 - MainThread - root - INFO - end create co-visitaion start from 2 in chunck 1
+2023-06-05 08:41:36,374 - MainThread - root - INFO - end create co-visitaion chunck: 1 in part 0
+2023-06-05 08:41:36,376 - MainThread - root - INFO - start create co-visitaion chunck: 2 in part 0
+2023-06-05 08:41:36,384 - MainThread - root - INFO - start create co-visitaion start from 4 in chunck 2
+2023-06-05 08:41:40,724 - MainThread - root - INFO - end create co-visitaion start from 4 in chunck 2
+2023-06-05 08:42:33,385 - MainThread - root - INFO - end create co-visitaion chunck: 2 in part 0
+2023-06-05 08:42:33,398 - MainThread - root - INFO - start create co-visitaion chunck: 3 in part 0
+2023-06-05 08:42:33,399 - MainThread - root - INFO - start create co-visitaion start from 6 in chunck 3
+2023-06-05 08:42:34,445 - MainThread - root - INFO - end create co-visitaion start from 6 in chunck 3
+2023-06-05 08:43:26,995 - MainThread - root - INFO - end create co-visitaion chunck: 3 in part 0
+2023-06-05 08:43:27,007 - MainThread - root - INFO - start create co-visitaion chunck: 4 in part 0
+2023-06-05 08:43:27,008 - MainThread - root - INFO - start create co-visitaion start from 8 in chunck 4
+2023-06-05 08:43:46,021 - MainThread - root - INFO - end create co-visitaion start from 8 in chunck 4
+2023-06-05 08:45:37,989 - MainThread - root - INFO - end create co-visitaion chunck: 4 in part 0
+2023-06-05 08:45:38,021 - MainThread - root - INFO - start create co-visitaion chunck: 5 in part 0
+2023-06-05 08:45:38,022 - MainThread - root - INFO - start create co-visitaion start from 10 in chunck 5
+2023-06-05 08:45:41,132 - MainThread - root - INFO - end create co-visitaion start from 10 in chunck 5
+2023-06-05 08:48:09,143 - MainThread - root - INFO - end create co-visitaion chunck: 5 in part 0
+2023-06-05 08:48:26,821 - MainThread - root - INFO - end create co-visitaion part: 0
+2023-06-05 08:48:26,823 - MainThread - root - INFO - start create co-visitaion part: 1
+2023-06-05 08:48:26,824 - MainThread - root - INFO - start create co-visitaion chunck: 0 in part 1
+2023-06-05 08:48:26,825 - MainThread - root - INFO - start create co-visitaion start from 0 in chunck 0
+2023-06-05 08:48:37,268 - MainThread - root - INFO - end create co-visitaion start from 0 in chunck 0
+2023-06-05 08:48:37,285 - MainThread - root - INFO - end create co-visitaion chunck: 0 in part 1
+2023-06-05 08:48:37,285 - MainThread - root - INFO - start create co-visitaion chunck: 1 in part 1
+2023-06-05 08:48:37,286 - MainThread - root - INFO - start create co-visitaion start from 2 in chunck 1
+2023-06-05 08:48:49,787 - MainThread - root - INFO - end create co-visitaion start from 2 in chunck 1
+2023-06-05 08:49:33,952 - MainThread - root - INFO - end create co-visitaion chunck: 1 in part 1
+2023-06-05 08:49:33,966 - MainThread - root - INFO - start create co-visitaion chunck: 2 in part 1
+2023-06-05 08:49:33,967 - MainThread - root - INFO - start create co-visitaion start from 4 in chunck 2
+2023-06-05 08:49:38,386 - MainThread - root - INFO - end create co-visitaion start from 4 in chunck 2
+2023-06-05 08:50:30,434 - MainThread - root - INFO - end create co-visitaion chunck: 2 in part 1
+2023-06-05 08:50:30,436 - MainThread - root - INFO - start create co-visitaion chunck: 3 in part 1
+2023-06-05 08:50:30,437 - MainThread - root - INFO - start create co-visitaion start from 6 in chunck 3
+2023-06-05 08:50:31,382 - MainThread - root - INFO - end create co-visitaion start from 6 in chunck 3
+2023-06-05 08:51:23,029 - MainThread - root - INFO - end create co-visitaion chunck: 3 in part 1
+2023-06-05 08:51:23,029 - MainThread - root - INFO - start create co-visitaion chunck: 4 in part 1
+2023-06-05 08:51:23,030 - MainThread - root - INFO - start create co-visitaion start from 8 in chunck 4
+2023-06-05 08:51:41,437 - MainThread - root - INFO - end create co-visitaion start from 8 in chunck 4
+2023-06-05 08:53:22,396 - MainThread - root - INFO - end create co-visitaion chunck: 4 in part 1
+2023-06-05 08:53:22,423 - MainThread - root - INFO - start create co-visitaion chunck: 5 in part 1
+2023-06-05 08:53:22,426 - MainThread - root - INFO - start create co-visitaion start from 10 in chunck 5
+2023-06-05 08:53:25,480 - MainThread - root - INFO - end create co-visitaion start from 10 in chunck 5
+2023-06-05 08:55:22,541 - MainThread - root - INFO - end create co-visitaion chunck: 5 in part 1
+2023-06-05 08:55:38,637 - MainThread - root - INFO - end create co-visitaion part: 1
+2023-06-05 08:55:38,638 - MainThread - root - INFO - start create co-visitaion part: 2
+2023-06-05 08:55:38,644 - MainThread - root - INFO - start create co-visitaion chunck: 0 in part 2
+2023-06-05 08:55:38,644 - MainThread - root - INFO - start create co-visitaion start from 0 in chunck 0
+2023-06-05 08:55:48,991 - MainThread - root - INFO - end create co-visitaion start from 0 in chunck 0
+2023-06-05 08:55:49,012 - MainThread - root - INFO - end create co-visitaion chunck: 0 in part 2
+2023-06-05 08:55:49,013 - MainThread - root - INFO - start create co-visitaion chunck: 1 in part 2
+2023-06-05 08:55:49,014 - MainThread - root - INFO - start create co-visitaion start from 2 in chunck 1
+2023-06-05 08:56:01,509 - MainThread - root - INFO - end create co-visitaion start from 2 in chunck 1
+2023-06-05 08:56:45,790 - MainThread - root - INFO - end create co-visitaion chunck: 1 in part 2
+2023-06-05 08:56:45,792 - MainThread - root - INFO - start create co-visitaion chunck: 2 in part 2
+2023-06-05 08:56:45,793 - MainThread - root - INFO - start create co-visitaion start from 4 in chunck 2
+2023-06-05 08:56:50,151 - MainThread - root - INFO - end create co-visitaion start from 4 in chunck 2
+2023-06-05 08:57:41,851 - MainThread - root - INFO - end create co-visitaion chunck: 2 in part 2
+2023-06-05 08:57:41,856 - MainThread - root - INFO - start create co-visitaion chunck: 3 in part 2
+2023-06-05 08:57:41,857 - MainThread - root - INFO - start create co-visitaion start from 6 in chunck 3
+2023-06-05 08:57:42,790 - MainThread - root - INFO - end create co-visitaion start from 6 in chunck 3
+2023-06-05 08:58:32,302 - MainThread - root - INFO - end create co-visitaion chunck: 3 in part 2
+2023-06-05 08:58:32,313 - MainThread - root - INFO - start create co-visitaion chunck: 4 in part 2
+2023-06-05 08:58:32,314 - MainThread - root - INFO - start create co-visitaion start from 8 in chunck 4
+2023-06-05 08:58:50,799 - MainThread - root - INFO - end create co-visitaion start from 8 in chunck 4
+2023-06-05 09:00:36,544 - MainThread - root - INFO - end create co-visitaion chunck: 4 in part 2
+2023-06-05 09:00:36,582 - MainThread - root - INFO - start create co-visitaion chunck: 5 in part 2
+2023-06-05 09:00:36,597 - MainThread - root - INFO - start create co-visitaion start from 10 in chunck 5
+2023-06-05 09:00:39,737 - MainThread - root - INFO - end create co-visitaion start from 10 in chunck 5
+2023-06-05 09:02:54,833 - MainThread - root - INFO - end create co-visitaion chunck: 5 in part 2
+2023-06-05 09:03:10,073 - MainThread - root - INFO - end create co-visitaion part: 2
+2023-06-05 09:03:10,074 - MainThread - root - INFO - start create co-visitaion part: 3
+2023-06-05 09:03:10,075 - MainThread - root - INFO - start create co-visitaion chunck: 0 in part 3
+2023-06-05 09:03:10,075 - MainThread - root - INFO - start create co-visitaion start from 0 in chunck 0
+2023-06-05 09:03:20,603 - MainThread - root - INFO - end create co-visitaion start from 0 in chunck 0
+2023-06-05 09:03:20,638 - MainThread - root - INFO - end create co-visitaion chunck: 0 in part 3
+2023-06-05 09:03:20,638 - MainThread - root - INFO - start create co-visitaion chunck: 1 in part 3
+2023-06-05 09:03:20,639 - MainThread - root - INFO - start create co-visitaion start from 2 in chunck 1
+2023-06-05 09:03:33,465 - MainThread - root - INFO - end create co-visitaion start from 2 in chunck 1
+2023-06-05 09:04:15,141 - MainThread - root - INFO - end create co-visitaion chunck: 1 in part 3
+2023-06-05 09:04:15,142 - MainThread - root - INFO - start create co-visitaion chunck: 2 in part 3
+2023-06-05 09:04:15,143 - MainThread - root - INFO - start create co-visitaion start from 4 in chunck 2
+2023-06-05 09:04:19,661 - MainThread - root - INFO - end create co-visitaion start from 4 in chunck 2
+2023-06-05 09:05:09,178 - MainThread - root - INFO - end create co-visitaion chunck: 2 in part 3
+2023-06-05 09:05:09,181 - MainThread - root - INFO - start create co-visitaion chunck: 3 in part 3
+2023-06-05 09:05:09,181 - MainThread - root - INFO - start create co-visitaion start from 6 in chunck 3
+2023-06-05 09:05:10,159 - MainThread - root - INFO - end create co-visitaion start from 6 in chunck 3
+2023-06-05 09:33:15,958 - MainThread - root - INFO - end create co-visitaion chunck: 3 in part 3
+2023-06-05 09:33:15,962 - MainThread - root - INFO - start create co-visitaion chunck: 4 in part 3
+2023-06-05 09:33:15,966 - MainThread - root - INFO - start create co-visitaion start from 8 in chunck 4
+2023-06-05 09:33:36,045 - MainThread - root - INFO - end create co-visitaion start from 8 in chunck 4
+2023-06-05 09:35:23,780 - MainThread - root - INFO - end create co-visitaion chunck: 4 in part 3
+2023-06-05 09:35:23,821 - MainThread - root - INFO - start create co-visitaion chunck: 5 in part 3
+2023-06-05 09:35:23,834 - MainThread - root - INFO - start create co-visitaion start from 10 in chunck 5
+2023-06-05 09:35:26,913 - MainThread - root - INFO - end create co-visitaion start from 10 in chunck 5
+2023-06-05 09:37:17,774 - MainThread - root - INFO - end create co-visitaion chunck: 5 in part 3
+2023-06-05 09:37:33,023 - MainThread - root - INFO - end create co-visitaion part: 3
+2023-06-05 09:37:33,035 - MainThread - root - INFO - end: create candidate by co-visitation
+2023-06-05 09:37:33,039 - MainThread - root - INFO - end create co-visit setting0
+2023-06-05 09:37:33,040 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-05 11:10:32,189 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-05 11:10:32,189 - MainThread - root - INFO - (param)target: validation
+2023-06-05 11:10:32,192 - MainThread - root - INFO - (param)covisitation setting: setting0
+2023-06-05 11:10:32,192 - MainThread - root - INFO - co-visit setting0 is already exits
+2023-06-05 11:10:32,193 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-05 11:10:52,753 - MainThread - root - INFO - start: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-05 11:10:52,755 - MainThread - root - INFO - (param)target: validation
+2023-06-05 11:10:52,755 - MainThread - root - INFO - (param)covisitation setting: setting1
+2023-06-05 11:10:52,756 - MainThread - root - INFO - start create co-visit setting1
+2023-06-05 11:10:52,756 - MainThread - root - INFO - start loading co-visit configuration
+2023-06-05 11:10:52,759 - MainThread - root - INFO - end loading co-visit configuration
+2023-06-05 11:10:52,759 - MainThread - root - INFO - start loading data for create co-visitaion
+2023-06-05 11:11:17,276 - MainThread - root - INFO - end loading data for create co-visitaion
+2023-06-05 11:11:17,277 - MainThread - root - INFO - start: create candidate by co-visitation
+2023-06-05 11:11:17,277 - MainThread - root - INFO - start create co-visitaion part: 0
+2023-06-05 11:11:17,278 - MainThread - root - INFO - start create co-visitaion chunck: 0 in part 0
+2023-06-05 11:11:17,279 - MainThread - root - INFO - start create co-visitaion start from 0 in chunck 0
+2023-06-05 11:11:20,364 - MainThread - root - INFO - end create co-visitaion start from 0 in chunck 0
+2023-06-05 11:11:20,375 - MainThread - root - INFO - start create co-visitaion start from 5 in chunck 0
+2023-06-05 11:11:32,598 - MainThread - root - INFO - end create co-visitaion start from 5 in chunck 0
+2023-06-05 11:11:32,600 - MainThread - root - INFO - start create co-visitaion start from 10 in chunck 0
+2023-06-05 11:11:48,659 - MainThread - root - INFO - end create co-visitaion start from 10 in chunck 0
+2023-06-05 11:11:48,665 - MainThread - root - INFO - start create co-visitaion start from 15 in chunck 0
+2023-06-05 11:12:07,046 - MainThread - root - INFO - end create co-visitaion start from 15 in chunck 0
+2023-06-05 11:12:07,182 - MainThread - root - INFO - end create co-visitaion chunck: 0 in part 0
+2023-06-05 11:12:07,185 - MainThread - root - INFO - start create co-visitaion chunck: 1 in part 0
+2023-06-05 11:12:07,185 - MainThread - root - INFO - start create co-visitaion start from 20 in chunck 1
+2023-06-05 11:17:24,173 - MainThread - root - INFO - end create co-visitaion start from 20 in chunck 1
+2023-06-05 11:17:24,223 - MainThread - root - INFO - start create co-visitaion start from 25 in chunck 1

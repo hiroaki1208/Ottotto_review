@@ -6,3 +6,12 @@ setting0:
     2: 3
   is_partial: 1
   target: 'validation'
+
+setting1:
+  top: 60
+  type_weight:
+    0: 1
+    1: 6
+    2: 3
+  is_partial: 0
+  target: 'validation'

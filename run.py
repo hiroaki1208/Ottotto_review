@@ -4,7 +4,6 @@ import numpy as np
 import os, sys
 import argparse
 import logging.config
-import yaml
 
 import src.create_covisit
 
@@ -49,8 +48,6 @@ def main():
             args.covisit, TYPE_LABEL
             )
         CoVisitaion.main()
-
-        # CoVisitaion.data_collection(args.target, args.is_partial)
 
 
         logging.info(f'end: {base_dir}')
