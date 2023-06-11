@@ -1,12 +1,12 @@
 setting0:
-  name: 'type_weight'
-  top: 60
-  type_weight:
+  name: 'type_weight' # co-visitationの種類
+  top: 60 # 上位Nのaidを取得
+  type_weight: # typeごとの重みづけ
     0: 1
     1: 6
     2: 3
-  is_partial: 1
-  target: 'validation'
+  target: 'validation' # 読み込みファイル対象
+  is_partial: 1 # 読み込みファイルを一部にする場合1
 
 setting1:
   name: 'type_weight'
@@ -21,5 +21,5 @@ setting1:
 setting2:
   name: 'buy2buy'
   top: 60
-  is_partial: 1
   target: 'validation'
+  is_partial: 1

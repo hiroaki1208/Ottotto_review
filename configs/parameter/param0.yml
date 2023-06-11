@@ -1,18 +1,27 @@
 target: 'validation'
-covisitation:
-  - 'setting0'
-  - 'setting1'
-  # type_weighted:
-  #  top: 60
-  #  type_weight:
-  #     0: 1
-  #     1: 6
-  #     2: 3
-  #   is_partial: 1
-  #   covisit_target: 'validation'
-  # buy2buy:
-  #   top: 60
 prediction:
   click:
+    covisitation_target:
+      setting0:
+        top: 20
+      setting1:
+        top: 20
+    covisitation_mix: 'mix0'
   carts:
+    covisitation_target:
+      setting0:
+        top: 20
+      setting1:
+        top: 20
+    covisitation_mix: 'mix0'
   orders:
+    covisitation_target:
+      setting0:
+        top: 20
+      setting1:
+        top: 20
+    covisitation_mix: 'mix0'
+
+covisitation:
+  - 'setting0'
+  - 'setting2'

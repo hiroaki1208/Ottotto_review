@@ -13,8 +13,8 @@ CONFIG_DIR = os.getenv('CONFIG_DIR')
 
 class CreateCoVisitaion():
 
-    def __init__(self, setting_name, type_label) -> None:
-        self.setting_name = setting_name
+    def __init__(self, settings, type_label) -> None:
+        self.settings = settings
         self.type_label = type_label
 
     def main(self):
@@ -23,28 +23,31 @@ class CreateCoVisitaion():
         -> ない場合、co-visitaion作成を実行
         '''
 
-        output_dir_path = os.path.join(OUTPUT_DIR, 'model', 'covisit', f'{self.setting_name}')
-        if not os.path.exists(output_dir_path):
-            logging.info(f'start create co-visit {self.setting_name}')
-            self.output_dir_path = output_dir_path
-            os.mkdir(output_dir_path)
+        # settings内のそれぞれについて確認
+        for setting_name in self.settings:
+            output_dir_path = os.path.join(OUTPUT_DIR, 'model', 'covisit', f'{setting_name}')
+            if not os.path.exists(output_dir_path):
+                logging.info(f'start create co-visit {setting_name}')
+                self.output_dir_path = output_dir_path
+                os.mkdir(output_dir_path)
 
-            self._load_config_file()
-            self._data_collection()
-            self._create_covisit_candidate()
-            logging.info(f'end create co-visit {self.setting_name}')
-        else:
-            logging.info(f'co-visit {self.setting_name} is already exits')
+                self._load_config_file(setting_name)
+                self._data_collection()
+                self._create_covisit_candidate()
+                
+                logging.info(f'end create co-visit {setting_name}')
+            else:
+                logging.info(f'co-visit {self.setting_name} is already exits')
     
-    def _load_config_file(self):
+    def _load_config_file(self, setting_name):
         '''設定ymlファイルを読み込み
         '''
 
-        logging.info(f'start loading co-visit configuration')
+        logging.info(f'start loading co-visit configuration for {setting_name}')
         with open(os.path.join(CONFIG_DIR, 'config_covisitation.yml')) as file:
             config_covisit = yaml.safe_load(file.read())
-        self.config = config_covisit[self.setting_name]
-        logging.info(f'end loading co-visit configuration')
+        self.config = config_covisit[setting_name]
+        logging.info(f'end loading co-visit configuration for {setting_name}')
 
     def _data_collection(self):
         '''data collection
@@ -75,9 +78,66 @@ class CreateCoVisitaion():
         df.ts = (df.ts/1000).astype('int32')
         df['type'] = df['type'].map(TYPE_LABEL).astype('int8')
         return df
+    
+    def _covisitation_type_weight(self, df, part, SIZE):
+        '''type_weightでのco-visitation matirix作成詳細
+        '''
+
+        # session x aid ごとに行動回数を重みづけしてsum
+        df['wgt'] = df['type'].map(self.config['type_weight'])
+        df['wgt'] = df['wgt'].astype('float32')
+        df = df.groupby(['session', 'aid']).wgt.sum()
+        df = df.reset_index()
+
+        # 同時に購入されたpair
+        ## メモリのためにaidを一部に絞る
+        ## その分partをPART回数ループ
+        df_merge = df.loc[(df.aid >= part*SIZE) & (df.aid < (part+1)*SIZE)].copy()
+        ## マージする先はaidを一部に絞らない(絞った対象以外のペアが取れなくなる)
+        df = df_merge.merge(df, on= 'session')
+        del df_merge
+        _= gc.collect()
+
+        df = df.loc[ (df.aid_x != df.aid_y)].copy() # 同じaidのペアを削除
+        df = df[['aid_x', 'aid_y', 'wgt_y']].copy() # ペアとなる先のwgtが重要
+        df = df.groupby(['aid_x', 'aid_y']).wgt_y.sum() # ペアごとに集計
+
+        return df
+    
+    def _covisitation_type_b2b(self, df, part, SIZE):
+        '''buy2buyでのco-visitation matirix作成詳細
+        '''
+
+        # session x aid ごとに行動回数を重みづけしてsum
+        # cart or buyのみに限定
+        df = df[df['type'].isin([1,2])].copy()
+        
+        df['wgt'] = df['type'].map(self.config['type_weight'])
+        df['wgt'] = df['wgt'].astype('float32')
+        df = df.groupby(['session', 'aid']).wgt.sum()
+        df = df.reset_index()
+
+        # 同時に購入されたpair
+        ## メモリのためにaidを一部に絞る
+        ## その分partをPART回数ループ
+        df_merge = df.loc[(df.aid >= part*SIZE) & (df.aid < (part+1)*SIZE)].copy()
+        ## マージする先はaidを一部に絞らない(絞った対象以外のペアが取れなくなる)
+        df = df_merge.merge(df, on= 'session')
+        del df_merge
+        _= gc.collect()
+
+        df = df.loc[ (df.aid_x != df.aid_y)].copy() # 同じaidのペアを削除
+        df = df[['aid_x', 'aid_y', 'wgt_y']].copy() # ペアとなる先のwgtが重要
+        df = df.groupby(['aid_x', 'aid_y']).wgt_y.sum() # ペアごとに集計
+
+        return df
+
 
     def _create_covisit_candidate(self):
         '''Co-Visitaion履歴から候補作成
+        chunkなどでの読み込みまではnameごとに同じ
+        読み込んだ後の処理をnameごとに変更
+            - type_weight: typeごとに重みづけして算出
         '''
 
         DISK_SIZE = 4
@@ -122,24 +182,33 @@ class CreateCoVisitaion():
                         read_files.append(path) 
                     df = pd.concat(adds)
 
-                    # session x aid ごとに行動回数を重みづけしてsum
-                    df['wgt'] = df['type'].map(self.config['type_weight'])
-                    df['wgt'] = df['wgt'].astype('float32')
-                    df = df.groupby(['session', 'aid']).wgt.sum()
-                    df = df.reset_index()
+                    # setting内のnameごとに処理を分ける
+                    if self.config['name'] == 'type_weight':
+                        df = self._covisitation_type_weight(df, part, SIZE)
+                    if self.config['name'] == 'buy2buy':
+                        df = self._covisitation_type_b2b(df, part, SIZE)
+                    
+                    # # =======================
+                    # # この範囲を修正
+                    # # session x aid ごとに行動回数を重みづけしてsum
+                    # df['wgt'] = df['type'].map(self.config['type_weight'])
+                    # df['wgt'] = df['wgt'].astype('float32')
+                    # df = df.groupby(['session', 'aid']).wgt.sum()
+                    # df = df.reset_index()
 
-                    # 同時に購入されたpair
-                    ## メモリのためにaidを一部に絞る
-                    ## その分partをPART回数ループ
-                    df_merge = df.loc[(df.aid >= part*SIZE) & (df.aid < (part+1)*SIZE)].copy()
-                    ## マージする先はaidを一部に絞らない(絞った対象以外のペアが取れなくなる)
-                    df = df_merge.merge(df, on= 'session')
-                    del df_merge
-                    _= gc.collect()
+                    # # 同時に購入されたpair
+                    # ## メモリのためにaidを一部に絞る
+                    # ## その分partをPART回数ループ
+                    # df_merge = df.loc[(df.aid >= part*SIZE) & (df.aid < (part+1)*SIZE)].copy()
+                    # ## マージする先はaidを一部に絞らない(絞った対象以外のペアが取れなくなる)
+                    # df = df_merge.merge(df, on= 'session')
+                    # del df_merge
+                    # _= gc.collect()
 
-                    df = df.loc[ (df.aid_x != df.aid_y)].copy() # 同じaidのペアを削除
-                    df = df[['aid_x', 'aid_y', 'wgt_y']].copy() # ペアとなる先のwgtが重要
-                    df = df.groupby(['aid_x', 'aid_y']).wgt_y.sum() # ペアごとに集計
+                    # df = df.loc[ (df.aid_x != df.aid_y)].copy() # 同じaidのペアを削除
+                    # df = df[['aid_x', 'aid_y', 'wgt_y']].copy() # ペアとなる先のwgtが重要
+                    # df = df.groupby(['aid_x', 'aid_y']).wgt_y.sum() # ペアごとに集計
+                    # # =======================
 
                     # 限定２の中で合計
                     if k == a: tmp2 = df

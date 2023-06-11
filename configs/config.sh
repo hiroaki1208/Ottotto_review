@@ -5,7 +5,7 @@ export OUTPUT_DIR="$(pwd)/output"
 export LOG_DIR="$(pwd)/logs"
 export CONFIG_DIR="$(pwd)/configs"
 
-# conda activate env0
+# conda activate env0a
 # export PYTHONPATH="$(pwd)/src:$(cd ../):${PYTHONPATH}"
 
 # ログ取得

@@ -12,28 +12,73 @@ CONFIG_DIR = os.getenv('CONFIG_DIR')
 
 class CreatePrediction:
 
-    def __init__(self, config_d, type_label) -> None:
+    def __init__(self, config_d, type_label, param_config) -> None:
         self.config_d = config_d        
         # self.pred_click_type = setting_name
         self.type_label = type_label
+        self.param_config = param_config
+    
+    # def _collect_covisit_setting(self):
+    #     '''予測用に使用するcovisitaionのsettingを集める
+    #     title: {settingN}_top_{N}
+    #     '''
+
+    #     setting_titles = []
+    #     for i in ['click', 'catrs', 'orders']:
+    #         setting_d = self.param_config[i]['covisitation_target'].keys()
+    #         for k in setting_d.keys():
+    #             v0 = setting_d[k]['top']
+    #             title = f'{k}_top_{v0}'
+    #             setting_titles.append(title)
+        
+    #     # 重複削除して作成
+    #     self.setting_title = list(set(setting_titles))
+
+    def _create_covisit_dict(self):
+        '''dict形式のcovisit matrixを作成
+        '''
+
+        # setting_titles = []
+        for i in ['click', 'catrs', 'orders']:
+            setting_d = self.param_config[i]['covisitation_target'].keys()
+            for k in setting_d.keys():
+                v0 = setting_d[k]['top']
+                title = f'{k}_top_{v0}'
+            
+
+
 
     def main(self):
         '''購入リストを予測
+        予測用dfを読み込み
+        予測用model読み込み
+            - co visitation matrix
+            - どのco visitation matrixを使用するか
+        予測
+            - co visitation matrixからtop20抽出方法
+            - ログ
         '''
 
         # load df to predict
-        # 予測対象のdfを読み込み
-        # validation or test
         test_df = self._load_test_df()
         test_df.sort_values(["session", "ts"], inplace= True)
 
-        # # predict for click
-        # pred_df_clicks = test_df.groupby(["session"]).apply(
-        #     lambda x: suggest_clicks(x)
-        # )
-        # clicks_pred_df = pd.DataFrame(pred_df_clicks.add_suffix("_clicks"), columns=["labels"]).reset_index()
-        # del pred_df_clicks
-        # _ = gc.collect()
+        # load co-visitaion matrix as dict
+        # parameter: top N
+        self._collect_covisit_setting()
+        self._create_covisit_dict()
+
+
+
+        
+
+        # predict for click
+        pred_df_clicks = test_df.groupby(["session"]).apply(
+            lambda x: suggest_clicks(x)
+        )
+        clicks_pred_df = pd.DataFrame(pred_df_clicks.add_suffix("_clicks"), columns=["labels"]).reset_index()
+        del pred_df_clicks
+        _ = gc.collect()
 
         # # predict for carts
         # carts_pred_df = pd.DataFrame(pred_df_buys.add_suffix("_carts"), columns=["labels"]).reset_index()

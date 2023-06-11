@@ -55,8 +55,10 @@ def main():
     #                     )
     args = parser.parse_args()
 
+    # parameter設定yml読み込み
     param_config = _load_config_file(args.param_idx)
-    print(param_config)
+    # param_config['type_label'] = TYPE_LABEL
+    import pdb; pdb.set_trace()
 
     try:
         logging.basicConfig(level=logging.INFO)   
@@ -68,22 +70,24 @@ def main():
         # os.mkdir(result_config_dir)
         # create_result_config(result_config_dir, args)
 
-        # logging.info(f'start: {base_dir}')
+        logging.info(f'start: {base_dir}')
         # logging.info(f'(param)target: {args.target}')
-        # # logging.info(f'(param)is_partial: {args.is_partial}')
+        # logging.info(f'(param)is_partial: {args.is_partial}')
         # logging.info(f'(param)covisitation setting: {args.covisit}')
 
-        # # 特徴量
+        # 特徴量
 
-        # # create model
-        # ## co-visitaion
+        # create model
+        ## co-visitaion
         # CoVisitaion = models.create_covisit.CreateCoVisitaion(
-        #     args.covisit, TYPE_LABEL
+        #     param_config['covisitation'], TYPE_LABEL
         #     )
         # CoVisitaion.main()
 
         # # prediction
-        # Prediction = src.prediction.CreatePrediction(vars(args), TYPE_LABEL)
+        # Prediction = src.prediction.CreatePrediction(
+        #     vars(args), TYPE_LABEL, param_config
+        #     )
         # Prediction.main()
 
 
