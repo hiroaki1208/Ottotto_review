@@ -1,24 +1,21 @@
 # 全体
 target: 'validation' # target or configuration
 prediction:
-  click:
-    covisitation:
-      target:
-        - setting0
-        - setting1
-      ensemble: 'ensemble0'
+  # clicks:
+  #   covisitation:
+  #     target:
+  #       - setting1
+  #     ensemble: 'ensemble1'
   carts:
     covisitation:
       target:
-        - setting0
         - setting1
-      ensemble: 'ensemble0'
+      ensemble: 'ensemble1'
   orders:
     covisitation:
       target:
-        - setting0
         - setting1
-      ensemble: 'ensemble0'
+      ensemble: 'ensemble1'
 
 # co-visitation matrix
 # setting{N}はoutputと紐づける

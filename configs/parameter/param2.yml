@@ -4,21 +4,18 @@ prediction:
   click:
     covisitation:
       target:
-        - setting0
         - setting1
-      ensemble: 'ensemble0'
+      ensemble: 'ensemble1'
   carts:
     covisitation:
       target:
-        - setting0
         - setting1
-      ensemble: 'ensemble0'
+      ensemble: 'ensemble1'
   orders:
     covisitation:
       target:
-        - setting0
         - setting1
-      ensemble: 'ensemble0'
+      ensemble: 'ensemble1'
 
 # co-visitation matrix
 # setting{N}はoutputと紐づける

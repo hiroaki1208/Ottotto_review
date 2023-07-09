@@ -1153,3 +1153,230 @@ AttributeError: 'CreatePrediction' object has no attribute '_read_file_to_cache'
 2023-06-05 23:39:26,075 - MainThread - root - INFO - start loading test_df
 2023-06-05 23:39:28,106 - MainThread - root - INFO - end loading data for test_df
 2023-06-05 23:39:31,649 - MainThread - root - INFO - end: C:\Users\hiroa\Documents\kaggle\ottotto_review
+2023-06-13 23:52:01,551 - MainThread - root - ERROR - __init__() takes 3 positional arguments but 4 were given
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 86, in main
+    Prediction = src.prediction.CreatePrediction(
+TypeError: __init__() takes 3 positional arguments but 4 were given
+2023-06-14 00:07:23,588 - MainThread - root - ERROR - 
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 71, in main
+    logging.info(f'start: {base_dir}')
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 71, in main
+    logging.info(f'start: {base_dir}')
+  File "C:\Users\hiroa\anaconda3\envs\env2\lib\bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "C:\Users\hiroa\anaconda3\envs\env2\lib\bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+2023-07-01 17:36:47,343 - MainThread - root - ERROR - 'CreateCoVisitaion' object has no attribute 'setting_name'
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 72, in main
+    logging.info(f'start: {base_dir}')
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 57, in main
+    logging.info(f'co-visit {self.setting_name} is already exits')
+AttributeError: 'CreateCoVisitaion' object has no attribute 'setting_name'
+2023-07-01 17:37:42,077 - MainThread - root - ERROR - 'CreateCoVisitaion' object has no attribute 'config'
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 83, in main
+    CoVisitaion.main()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 53, in main
+    self._create_covisit_candidate()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 231, in _create_covisit_candidate
+    if self.config['name'] == 'type_weight':
+AttributeError: 'CreateCoVisitaion' object has no attribute 'config'
+2023-07-01 17:42:30,991 - MainThread - root - ERROR - 'CreateCoVisitaion' object has no attribute 'config'
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 83, in main
+    CoVisitaion.main()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 53, in main
+    self._create_covisit_candidate(covisitation_target)
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 233, in _create_covisit_candidate
+    df = self._covisitation_type_weight(df, part, SIZE)
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 103, in _covisitation_type_weight
+    df['wgt'] = df['type'].map(self.config['type_weight'])
+AttributeError: 'CreateCoVisitaion' object has no attribute 'config'
+2023-07-01 17:47:03,544 - MainThread - root - ERROR - 'convisitation'
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 83, in main
+    CoVisitaion.main()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 53, in main
+    self._create_covisit_candidate(covisitation_target)
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 233, in _create_covisit_candidate
+    df = self._covisitation_type_weight(df, part, SIZE, target)
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 104, in _covisitation_type_weight
+    df['wgt'] = df['type'].map(self.param['convisitation'][target]['type_weight'])
+KeyError: 'convisitation'
+2023-07-01 17:48:48,496 - MainThread - root - ERROR - local variable 'tmp2' referenced before assignment
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 83, in main
+    CoVisitaion.main()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 53, in main
+    self._create_covisit_candidate(covisitation_target)
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 268, in _create_covisit_candidate
+    else: tmp = tmp.add(tmp2, fill_value= 0)
+UnboundLocalError: local variable 'tmp2' referenced before assignment
+2023-07-01 17:53:29,284 - MainThread - root - ERROR - local variable 'tmp2' referenced before assignment
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 83, in main
+    CoVisitaion.main()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 53, in main
+    self._create_covisit_candidate(covisitation_target)
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 268, in _create_covisit_candidate
+    else: tmp = tmp.add(tmp2, fill_value= 0)
+UnboundLocalError: local variable 'tmp2' referenced before assignment
+2023-07-09 14:30:25,571 - MainThread - root - ERROR - local variable 'tmp2' referenced before assignment
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 83, in main
+    CoVisitaion.main()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 53, in main
+    self._create_covisit_candidate(covisitation_target)
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 268, in _create_covisit_candidate
+    if chunk == 0: tmp = tmp2
+UnboundLocalError: local variable 'tmp2' referenced before assignment
+2023-07-09 14:50:32,406 - MainThread - root - ERROR - 
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 83, in main
+    CoVisitaion.main()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 53, in main
+    self._create_covisit_candidate(covisitation_target)
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 270, in _create_covisit_candidate
+    if chunk == 0: tmp = tmp2
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 270, in _create_covisit_candidate
+    if chunk == 0: tmp = tmp2
+  File "C:\Users\hiroa\anaconda3\envs\env2\lib\bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "C:\Users\hiroa\anaconda3\envs\env2\lib\bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+2023-07-09 14:55:57,464 - MainThread - root - ERROR - local variable 'tmp2' referenced before assignment
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 83, in main
+    CoVisitaion.main()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 53, in main
+    self._create_covisit_candidate(covisitation_target)
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 270, in _create_covisit_candidate
+    if chunk == 0: tmp = tmp2
+UnboundLocalError: local variable 'tmp2' referenced before assignment
+2023-07-09 15:12:41,263 - MainThread - root - ERROR - 
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 83, in main
+    CoVisitaion.main()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 53, in main
+    self._create_covisit_candidate(covisitation_target)
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 270, in _create_covisit_candidate
+    assert set(self.files) == set(read_files)
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 270, in _create_covisit_candidate
+    assert set(self.files) == set(read_files)
+  File "C:\Users\hiroa\anaconda3\envs\env2\lib\bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "C:\Users\hiroa\anaconda3\envs\env2\lib\bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+2023-07-09 15:12:51,030 - MainThread - root - ERROR - local variable 'tmp' referenced before assignment
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 83, in main
+    CoVisitaion.main()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 53, in main
+    self._create_covisit_candidate(covisitation_target)
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 263, in _create_covisit_candidate
+    if chunk == 0: tmp = tmp2
+UnboundLocalError: local variable 'tmp' referenced before assignment
+2023-07-09 15:16:53,711 - MainThread - root - ERROR - 'CreateCoVisitaion' object has no attribute 'output_dir_path'
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 83, in main
+    CoVisitaion.main()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 53, in main
+    self._create_covisit_candidate(covisitation_target)
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 281, in _create_covisit_candidate
+    output_path = os.path.join(self.output_dir_path, f'part{part}.pqt')
+AttributeError: 'CreateCoVisitaion' object has no attribute 'output_dir_path'
+2023-07-09 15:21:51,394 - MainThread - root - ERROR - Cannot save file into a non-existent directory: 'C:\Users\hiroa\Documents\kaggle\ottotto_review\output\validation\model\covisit\setting0'
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 83, in main
+    CoVisitaion.main()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 54, in main
+    self._create_covisit_candidate(covisitation_target)
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 283, in _create_covisit_candidate
+    tmp.to_parquet(output_path)
+  File "C:\Users\hiroa\anaconda3\envs\env2\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\hiroa\anaconda3\envs\env2\lib\site-packages\pandas\core\frame.py", line 2975, in to_parquet
+    return to_parquet(
+  File "C:\Users\hiroa\anaconda3\envs\env2\lib\site-packages\pandas\io\parquet.py", line 430, in to_parquet
+    impl.write(
+  File "C:\Users\hiroa\anaconda3\envs\env2\lib\site-packages\pandas\io\parquet.py", line 176, in write
+    path_or_handle, handles, kwargs["filesystem"] = _get_path_or_handle(
+  File "C:\Users\hiroa\anaconda3\envs\env2\lib\site-packages\pandas\io\parquet.py", line 102, in _get_path_or_handle
+    handles = get_handle(
+  File "C:\Users\hiroa\anaconda3\envs\env2\lib\site-packages\pandas\io\common.py", line 734, in get_handle
+    check_parent_directory(str(handle))
+  File "C:\Users\hiroa\anaconda3\envs\env2\lib\site-packages\pandas\io\common.py", line 597, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: 'C:\Users\hiroa\Documents\kaggle\ottotto_review\output\validation\model\covisit\setting0'
+2023-07-09 15:43:10,552 - MainThread - root - ERROR - "['wgt_y'] not in index"
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 83, in main
+    CoVisitaion.main()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 53, in main
+    self._create_covisit_candidate(covisitation_target)
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 232, in _create_covisit_candidate
+    adds = []
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 165, in _covisitation_time_weight
+    ## ÇªÇÃï™partÇPARTâÒêîÉãÅ[Év
+  File "C:\Users\hiroa\anaconda3\envs\env2\lib\site-packages\pandas\core\frame.py", line 3811, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "C:\Users\hiroa\anaconda3\envs\env2\lib\site-packages\pandas\core\indexes\base.py", line 6113, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "C:\Users\hiroa\anaconda3\envs\env2\lib\site-packages\pandas\core\indexes\base.py", line 6176, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['wgt_y'] not in index"
+2023-07-09 18:49:21,095 - MainThread - root - ERROR - glob() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 89, in main
+    Prediction.main()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\prediction.py", line 135, in main
+    self._collect_covisit_setting(prediction_target)
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\prediction.py", line 87, in _collect_covisit_setting
+    input_paths = sorted( glob.glob(input_dir, '*') )
+TypeError: glob() takes 1 positional argument but 2 were given
+2023-07-09 18:52:41,503 - MainThread - root - ERROR - 'CreatePrediction' object has no attribute 'config_d'
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 89, in main
+    Prediction.main()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\prediction.py", line 169, in main
+    output_path = os.path.join(OUTPUT_DIR, 'result', self.config_d['subfolder'], 'prediction.csv')
+AttributeError: 'CreatePrediction' object has no attribute 'config_d'
+2023-07-09 20:06:02,192 - MainThread - root - ERROR - 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 83, in main
+    CoVisitaion.main()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\models\create_covisit.py", line 264, in main
+    for covisitation_target in covisitation_targets:
+TypeError: 'NoneType' object is not iterable
+2023-07-09 20:07:44,605 - MainThread - root - ERROR - 'emsemble'
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 89, in main
+    Prediction.main()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\prediction.py", line 193, in main
+    self.param['prediction'][prediction_target]['covisitation']['emsemble']
+KeyError: 'emsemble'
+2023-07-09 20:11:06,845 - MainThread - root - ERROR - 'ensemble1'
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 89, in main
+    Prediction.main()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\prediction.py", line 193, in main
+    add = self.ensemble_func[
+KeyError: 'ensemble1'
+2023-07-09 20:36:19,606 - MainThread - root - ERROR - read_csv() got an unexpected keyword argument 'index'
+Traceback (most recent call last):
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\run.py", line 89, in main
+    Prediction.main()
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\prediction.py", line 280, in main
+  File "C:\Users\hiroa\Documents\kaggle\ottotto_review\src\prediction.py", line 162, in _validate
+    pred_df = pd.read_csv(path, index= False)
+  File "C:\Users\hiroa\anaconda3\envs\env2\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\hiroa\anaconda3\envs\env2\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+TypeError: read_csv() got an unexpected keyword argument 'index'

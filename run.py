@@ -25,9 +25,8 @@ def _load_config_file(fname):
     '''parameter設定ファイルを読み込み
     '''
     logging.info(f'start loading parameter configuration')
-    with open(os.path.join(CONFIG_DIR, 'parameter', f'{fname}.yml')) as file:
+    with open(os.path.join(CONFIG_DIR, 'parameter', f'{fname}.yml'), encoding='utf-8') as file:
         config = yaml.safe_load(file.read())
-    # config = config_covisit[self.setting_name]
     logging.info(f'end loading parameter configuration')
 
     return config
@@ -56,9 +55,8 @@ def main():
     args = parser.parse_args()
 
     # parameter設定yml読み込み
-    param_config = _load_config_file(args.param_idx)
+    param = _load_config_file(args.param_idx)
     # param_config['type_label'] = TYPE_LABEL
-    import pdb; pdb.set_trace()
 
     try:
         logging.basicConfig(level=logging.INFO)   
@@ -78,17 +76,17 @@ def main():
         # 特徴量
 
         # create model
-        ## co-visitaion
-        # CoVisitaion = models.create_covisit.CreateCoVisitaion(
-        #     param_config['covisitation'], TYPE_LABEL
-        #     )
-        # CoVisitaion.main()
+        # co-visitaion
+        CoVisitaion = models.create_covisit.CreateCoVisitaion(
+            param, TYPE_LABEL
+            )
+        CoVisitaion.main()
 
-        # # prediction
-        # Prediction = src.prediction.CreatePrediction(
-        #     vars(args), TYPE_LABEL, param_config
-        #     )
-        # Prediction.main()
+        # prediction
+        Prediction = src.prediction.CreatePrediction(
+            param, TYPE_LABEL, args.param_idx
+            )
+        Prediction.main()
 
 
 
